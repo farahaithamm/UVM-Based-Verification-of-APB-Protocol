@@ -22,6 +22,34 @@ APB_WRAPPER dut(
     .PSLVERR(inf.PSLVERR)
 );
 
+bind APB_WRAPPER APB_WRAPPER_SVA apb_wrapper_sva_inst (
+    .PCLK(PCLK),
+    .PRESETn(PRESETn),
+    .addr(addr),
+    .sel(sel),
+    .transfer(transfer),
+    .wr_en(wr_en),
+    .wdata(wdata),
+    .strb(strb),
+    .OUTDATA(OUTDATA),
+    .valid_out(valid_out),
+    .PSLVERR(PSLVERR),
+    .PREADY(PREADY),
+    .PREADY0(PREADY0),
+    .PREADY1(PREADY1),
+    .PRDATA(PRDATA),
+    .PRDATA0(PRDATA0),
+    .PRDATA1(PRDATA1),
+    .PSLVERR0(PSLVERR0),
+    .PSLVERR1(PSLVERR1),
+    .PADDR(PADDR),
+    .PWDATA(PWDATA),
+    .PSEL(PSEL),
+    .PENABLE(PENABLE),
+    .PWRITE(PWRITE),
+    .cs(dut.master.cs)
+);
+
 initial begin
     $readmemh("mem.dat", dut.slave0.mem);
     $readmemh("mem.dat", dut.slave1.mem);

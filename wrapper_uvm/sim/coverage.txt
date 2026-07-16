@@ -1,6 +1,145 @@
 Coverage Report by instance with details
 
 =================================================================================
+=== Instance: /APB_top/dut/apb_wrapper_sva_inst
+=== Design Unit: work.APB_WRAPPER_SVA
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      22        22         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/APB_top/dut/apb_wrapper_sva_inst/p_cs_reset
+                     D:/APB UVM/APB_sva.sv(38)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_psel_onehot
+                     D:/APB UVM/APB_sva.sv(45)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_psel_matches_sel
+                     D:/APB UVM/APB_sva.sv(51)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pready_mux
+                     D:/APB UVM/APB_sva.sv(57)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_prdata_mux
+                     D:/APB UVM/APB_sva.sv(63)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pslverr_mux
+                     D:/APB UVM/APB_sva.sv(69)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_valid_out_noerr
+                     D:/APB UVM/APB_sva.sv(75)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_no_x_outdata
+                     D:/APB UVM/APB_sva.sv(81)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_sel_stable
+                     D:/APB UVM/APB_sva.sv(87)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_no_x_pready_pslverr
+                     D:/APB UVM/APB_sva.sv(93)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pslverr_high
+                     D:/APB UVM/APB_sva.sv(99)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pslverr_low
+                     D:/APB UVM/APB_sva.sv(105)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_setup_state
+                     D:/APB UVM/APB_sva.sv(111)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_access_setup
+                     D:/APB UVM/APB_sva.sv(117)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_access_psel_penable
+                     D:/APB UVM/APB_sva.sv(123)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_idle_to_setup
+                     D:/APB UVM/APB_sva.sv(129)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_idle_stays
+                     D:/APB UVM/APB_sva.sv(136)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_stable_setup
+                     D:/APB UVM/APB_sva.sv(143)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pstrb_low_on_read
+                     D:/APB UVM/APB_sva.sv(149)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pstrb_not_low_on_write
+                     D:/APB UVM/APB_sva.sv(155)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_valid_out_read_only
+                     D:/APB UVM/APB_sva.sv(161)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_valid_out_no_error
+                     D:/APB UVM/APB_sva.sv(167)
+                                                        0          1
+
+Directive Coverage:
+    Directives                      21        21         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/APB_top/dut/apb_wrapper_sva_inst/c_psel_onehot 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(46)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_psel_matches_sel 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(52)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pready_mux 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(58)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_prdata_mux 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(64)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pslverr_mux 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(70)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_valid_out_noerr 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(76)
+                                                                               615 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_no_x_outdata 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(82)
+                                                                               615 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_sel_stable 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(88)
+                                                                              1445 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_no_x_pready_pslverr 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(94)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pslverr_high 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(100)
+                                                                               153 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pslverr_low 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(106)
+                                                                              3508 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_setup_state 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(112)
+                                                                              1445 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_access_setup 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(118)
+                                                                               716 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_access_psel_penable 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(124)
+                                                                              1445 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_idle_to_setup 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(130)
+                                                                               729 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_idle_stays 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(137)
+                                                                                41 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_stable_setup 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(144)
+                                                                              1445 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pstrb_low_on_read 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(150)
+                                                                              1766 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pstrb_not_low_on_write 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(156)
+                                                                              1895 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_valid_out_read_only 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(162)
+                                                                               615 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_valid_out_no_error 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(168)
+                                                                              3661 Covered   
+
+=================================================================================
 === Instance: /APB_sequences_pkg
 === Design Unit: work.APB_sequences_pkg
 =================================================================================
@@ -11,14 +150,14 @@ Assertion Coverage:
 Name                 File(Line)                   Failure      Pass 
                                                   Count        Count
 --------------------------------------------------------------------
-/APB_sequences_pkg/APB_write_sequence/body/#ublk#4690743#38/immed__40
-                     D:/APB UVM/APB_sequences.sv(40)
+/APB_sequences_pkg/APB_write_sequence/body/#ublk#4690743#38/immed__41
+                     D:/APB UVM/APB_sequences.sv(41)
                                                         0          1
-/APB_sequences_pkg/APB_read_sequence/body/#ublk#4690743#57/immed__59
-                     D:/APB UVM/APB_sequences.sv(59)
+/APB_sequences_pkg/APB_read_sequence/body/#ublk#4690743#58/immed__60
+                     D:/APB UVM/APB_sequences.sv(60)
                                                         0          1
-/APB_sequences_pkg/APB_read_write_sequence/body/#ublk#4690743#76/immed__78
-                     D:/APB UVM/APB_sequences.sv(78)
+/APB_sequences_pkg/APB_read_write_sequence/body/#ublk#4690743#78/immed__82
+                     D:/APB UVM/APB_sequences.sv(82)
                                                         0          1
 
 =================================================================================
@@ -103,7 +242,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
-        bin rst_on                                         90          1          -    Covered              
+        bin rst_on                                         91          1          -    Covered              
         bin rst_off                                      3660          1          -    Covered              
         bin rst_on_to_off                                  34          1          -    Covered              
         bin rst_off_to_on                                  33          1          -    Covered              
@@ -111,7 +250,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                               128        128          -                      
         missing/total bins:                                 0        128          -                      
         % Hit:                                        100.00%        100          -                      
-        bin valid_addr[0]                                  25          1          -    Covered              
+        bin valid_addr[0]                                  26          1          -    Covered              
         bin valid_addr[1]                                  21          1          -    Covered              
         bin valid_addr[2]                                  32          1          -    Covered              
         bin valid_addr[3]                                  20          1          -    Covered              
@@ -243,40 +382,40 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      1912          1          -    Covered              
+        bin auto[0]                                      1913          1          -    Covered              
         bin auto[1]                                      1838          1          -    Covered              
     Coverpoint transfer_cp                            100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      1500          1          -    Covered              
+        bin auto[0]                                      1501          1          -    Covered              
         bin auto[1]                                      2250          1          -    Covered              
     Coverpoint wr_en_cp                               100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      1822          1          -    Covered              
+        bin auto[0]                                      1823          1          -    Covered              
         bin auto[1]                                      1928          1          -    Covered              
     Coverpoint strb_cp                                100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
         missing/total bins:                                 0         16          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                       112          1          -    Covered              
-        bin auto[1]                                       289          1          -    Covered              
-        bin auto[2]                                       226          1          -    Covered              
-        bin auto[3]                                       224          1          -    Covered              
-        bin auto[4]                                       211          1          -    Covered              
-        bin auto[5]                                       228          1          -    Covered              
-        bin auto[6]                                       262          1          -    Covered              
-        bin auto[7]                                       208          1          -    Covered              
-        bin auto[8]                                       225          1          -    Covered              
-        bin auto[9]                                       259          1          -    Covered              
-        bin auto[10]                                      288          1          -    Covered              
-        bin auto[11]                                      273          1          -    Covered              
-        bin auto[12]                                      274          1          -    Covered              
-        bin auto[13]                                      198          1          -    Covered              
-        bin auto[14]                                      234          1          -    Covered              
-        bin auto[15]                                      239          1          -    Covered              
+        bin auto[0]                                      1823          1          -    Covered              
+        bin auto[1]                                       152          1          -    Covered              
+        bin auto[2]                                       107          1          -    Covered              
+        bin auto[3]                                       126          1          -    Covered              
+        bin auto[4]                                       107          1          -    Covered              
+        bin auto[5]                                       138          1          -    Covered              
+        bin auto[6]                                       140          1          -    Covered              
+        bin auto[7]                                       133          1          -    Covered              
+        bin auto[8]                                       127          1          -    Covered              
+        bin auto[9]                                       125          1          -    Covered              
+        bin auto[10]                                      151          1          -    Covered              
+        bin auto[11]                                      107          1          -    Covered              
+        bin auto[12]                                      116          1          -    Covered              
+        bin auto[13]                                      129          1          -    Covered              
+        bin auto[14]                                      140          1          -    Covered              
+        bin auto[15]                                      130          1          -    Covered              
     Coverpoint valid_out_cp                           100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
@@ -297,7 +436,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                        1131          1          -    Covered              
             bin <auto[0],auto[1]>                        1119          1          -    Covered              
             bin <auto[1],auto[0]>                         707          1          -    Covered              
-            bin <auto[0],auto[0]>                         793          1          -    Covered              
+            bin <auto[0],auto[0]>                         794          1          -    Covered              
     Cross sel_wr_crp                                  100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -306,44 +445,44 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                        1003          1          -    Covered              
             bin <auto[0],auto[1]>                         925          1          -    Covered              
             bin <auto[1],auto[0]>                         835          1          -    Covered              
-            bin <auto[0],auto[0]>                         987          1          -    Covered              
+            bin <auto[0],auto[0]>                         988          1          -    Covered              
     Cross sel_strb_crp                                100.00%        100          -    Covered              
         covered/total bins:                                32         32          -                      
         missing/total bins:                                 0         32          -                      
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
-            bin <auto[1],auto[15]>                         94          1          -    Covered              
-            bin <auto[0],auto[15]>                        145          1          -    Covered              
-            bin <auto[1],auto[14]>                        105          1          -    Covered              
-            bin <auto[0],auto[14]>                        129          1          -    Covered              
-            bin <auto[1],auto[13]>                        105          1          -    Covered              
-            bin <auto[0],auto[13]>                         93          1          -    Covered              
-            bin <auto[1],auto[12]>                        152          1          -    Covered              
-            bin <auto[0],auto[12]>                        122          1          -    Covered              
-            bin <auto[1],auto[11]>                        109          1          -    Covered              
-            bin <auto[0],auto[11]>                        164          1          -    Covered              
-            bin <auto[1],auto[10]>                        120          1          -    Covered              
-            bin <auto[0],auto[10]>                        168          1          -    Covered              
-            bin <auto[1],auto[9]>                         140          1          -    Covered              
-            bin <auto[0],auto[9]>                         119          1          -    Covered              
-            bin <auto[1],auto[8]>                         107          1          -    Covered              
-            bin <auto[0],auto[8]>                         118          1          -    Covered              
-            bin <auto[1],auto[7]>                         102          1          -    Covered              
-            bin <auto[0],auto[7]>                         106          1          -    Covered              
-            bin <auto[1],auto[6]>                         145          1          -    Covered              
-            bin <auto[0],auto[6]>                         117          1          -    Covered              
-            bin <auto[1],auto[5]>                         115          1          -    Covered              
-            bin <auto[0],auto[5]>                         113          1          -    Covered              
-            bin <auto[1],auto[4]>                         102          1          -    Covered              
-            bin <auto[0],auto[4]>                         109          1          -    Covered              
-            bin <auto[1],auto[3]>                         111          1          -    Covered              
-            bin <auto[0],auto[3]>                         113          1          -    Covered              
-            bin <auto[1],auto[2]>                         123          1          -    Covered              
-            bin <auto[0],auto[2]>                         103          1          -    Covered              
-            bin <auto[1],auto[1]>                         148          1          -    Covered              
-            bin <auto[0],auto[1]>                         141          1          -    Covered              
-            bin <auto[1],auto[0]>                          60          1          -    Covered              
-            bin <auto[0],auto[0]>                          52          1          -    Covered              
+            bin <auto[1],auto[15]>                         69          1          -    Covered              
+            bin <auto[0],auto[15]>                         61          1          -    Covered              
+            bin <auto[1],auto[14]>                         53          1          -    Covered              
+            bin <auto[0],auto[14]>                         87          1          -    Covered              
+            bin <auto[1],auto[13]>                         72          1          -    Covered              
+            bin <auto[0],auto[13]>                         57          1          -    Covered              
+            bin <auto[1],auto[12]>                         79          1          -    Covered              
+            bin <auto[0],auto[12]>                         37          1          -    Covered              
+            bin <auto[1],auto[11]>                         46          1          -    Covered              
+            bin <auto[0],auto[11]>                         61          1          -    Covered              
+            bin <auto[1],auto[10]>                         66          1          -    Covered              
+            bin <auto[0],auto[10]>                         85          1          -    Covered              
+            bin <auto[1],auto[9]>                          60          1          -    Covered              
+            bin <auto[0],auto[9]>                          65          1          -    Covered              
+            bin <auto[1],auto[8]>                          72          1          -    Covered              
+            bin <auto[0],auto[8]>                          55          1          -    Covered              
+            bin <auto[1],auto[7]>                          60          1          -    Covered              
+            bin <auto[0],auto[7]>                          73          1          -    Covered              
+            bin <auto[1],auto[6]>                          56          1          -    Covered              
+            bin <auto[0],auto[6]>                          84          1          -    Covered              
+            bin <auto[1],auto[5]>                          76          1          -    Covered              
+            bin <auto[0],auto[5]>                          62          1          -    Covered              
+            bin <auto[1],auto[4]>                          58          1          -    Covered              
+            bin <auto[0],auto[4]>                          49          1          -    Covered              
+            bin <auto[1],auto[3]>                          75          1          -    Covered              
+            bin <auto[0],auto[3]>                          51          1          -    Covered              
+            bin <auto[1],auto[2]>                          56          1          -    Covered              
+            bin <auto[0],auto[2]>                          51          1          -    Covered              
+            bin <auto[1],auto[1]>                         105          1          -    Covered              
+            bin <auto[0],auto[1]>                          47          1          -    Covered              
+            bin <auto[1],auto[0]>                         835          1          -    Covered              
+            bin <auto[0],auto[0]>                         988          1          -    Covered              
     Cross sel_valid_crp                               100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -352,7 +491,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                         279          1          -    Covered              
             bin <auto[0],auto[1]>                         336          1          -    Covered              
             bin <auto[1],auto[0]>                        1559          1          -    Covered              
-            bin <auto[0],auto[0]>                        1576          1          -    Covered              
+            bin <auto[0],auto[0]>                        1577          1          -    Covered              
     Cross sel_PSLVERR_crp                             100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -361,7 +500,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                          69          1          -    Covered              
             bin <auto[0],auto[1]>                          84          1          -    Covered              
             bin <auto[1],auto[0]>                        1769          1          -    Covered              
-            bin <auto[0],auto[0]>                        1828          1          -    Covered              
+            bin <auto[0],auto[0]>                        1829          1          -    Covered              
     Cross sel_addr_crp                                 99.60%        100          -    Uncovered            
         covered/total bins:                               255        256          -                      
         missing/total bins:                                 1        256          -                      
@@ -621,7 +760,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],valid_addr[1]>                    13          1          -    Covered              
             bin <auto[0],valid_addr[1]>                     8          1          -    Covered              
             bin <auto[1],valid_addr[0]>                    17          1          -    Covered              
-            bin <auto[0],valid_addr[0]>                     8          1          -    Covered              
+            bin <auto[0],valid_addr[0]>                     9          1          -    Covered              
             bin <auto[1],valid_addr[34]>                    0          1          1    ZERO                 
 
 COVERGROUP COVERAGE:
@@ -698,7 +837,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
-        bin rst_on                                         90          1          -    Covered              
+        bin rst_on                                         91          1          -    Covered              
         bin rst_off                                      3660          1          -    Covered              
         bin rst_on_to_off                                  34          1          -    Covered              
         bin rst_off_to_on                                  33          1          -    Covered              
@@ -706,7 +845,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                               128        128          -                      
         missing/total bins:                                 0        128          -                      
         % Hit:                                        100.00%        100          -                      
-        bin valid_addr[0]                                  25          1          -    Covered              
+        bin valid_addr[0]                                  26          1          -    Covered              
         bin valid_addr[1]                                  21          1          -    Covered              
         bin valid_addr[2]                                  32          1          -    Covered              
         bin valid_addr[3]                                  20          1          -    Covered              
@@ -838,40 +977,40 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      1912          1          -    Covered              
+        bin auto[0]                                      1913          1          -    Covered              
         bin auto[1]                                      1838          1          -    Covered              
     Coverpoint transfer_cp                            100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      1500          1          -    Covered              
+        bin auto[0]                                      1501          1          -    Covered              
         bin auto[1]                                      2250          1          -    Covered              
     Coverpoint wr_en_cp                               100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      1822          1          -    Covered              
+        bin auto[0]                                      1823          1          -    Covered              
         bin auto[1]                                      1928          1          -    Covered              
     Coverpoint strb_cp                                100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
         missing/total bins:                                 0         16          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                       112          1          -    Covered              
-        bin auto[1]                                       289          1          -    Covered              
-        bin auto[2]                                       226          1          -    Covered              
-        bin auto[3]                                       224          1          -    Covered              
-        bin auto[4]                                       211          1          -    Covered              
-        bin auto[5]                                       228          1          -    Covered              
-        bin auto[6]                                       262          1          -    Covered              
-        bin auto[7]                                       208          1          -    Covered              
-        bin auto[8]                                       225          1          -    Covered              
-        bin auto[9]                                       259          1          -    Covered              
-        bin auto[10]                                      288          1          -    Covered              
-        bin auto[11]                                      273          1          -    Covered              
-        bin auto[12]                                      274          1          -    Covered              
-        bin auto[13]                                      198          1          -    Covered              
-        bin auto[14]                                      234          1          -    Covered              
-        bin auto[15]                                      239          1          -    Covered              
+        bin auto[0]                                      1823          1          -    Covered              
+        bin auto[1]                                       152          1          -    Covered              
+        bin auto[2]                                       107          1          -    Covered              
+        bin auto[3]                                       126          1          -    Covered              
+        bin auto[4]                                       107          1          -    Covered              
+        bin auto[5]                                       138          1          -    Covered              
+        bin auto[6]                                       140          1          -    Covered              
+        bin auto[7]                                       133          1          -    Covered              
+        bin auto[8]                                       127          1          -    Covered              
+        bin auto[9]                                       125          1          -    Covered              
+        bin auto[10]                                      151          1          -    Covered              
+        bin auto[11]                                      107          1          -    Covered              
+        bin auto[12]                                      116          1          -    Covered              
+        bin auto[13]                                      129          1          -    Covered              
+        bin auto[14]                                      140          1          -    Covered              
+        bin auto[15]                                      130          1          -    Covered              
     Coverpoint valid_out_cp                           100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
@@ -892,7 +1031,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                        1131          1          -    Covered              
             bin <auto[0],auto[1]>                        1119          1          -    Covered              
             bin <auto[1],auto[0]>                         707          1          -    Covered              
-            bin <auto[0],auto[0]>                         793          1          -    Covered              
+            bin <auto[0],auto[0]>                         794          1          -    Covered              
     Cross sel_wr_crp                                  100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -901,44 +1040,44 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                        1003          1          -    Covered              
             bin <auto[0],auto[1]>                         925          1          -    Covered              
             bin <auto[1],auto[0]>                         835          1          -    Covered              
-            bin <auto[0],auto[0]>                         987          1          -    Covered              
+            bin <auto[0],auto[0]>                         988          1          -    Covered              
     Cross sel_strb_crp                                100.00%        100          -    Covered              
         covered/total bins:                                32         32          -                      
         missing/total bins:                                 0         32          -                      
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
-            bin <auto[1],auto[15]>                         94          1          -    Covered              
-            bin <auto[0],auto[15]>                        145          1          -    Covered              
-            bin <auto[1],auto[14]>                        105          1          -    Covered              
-            bin <auto[0],auto[14]>                        129          1          -    Covered              
-            bin <auto[1],auto[13]>                        105          1          -    Covered              
-            bin <auto[0],auto[13]>                         93          1          -    Covered              
-            bin <auto[1],auto[12]>                        152          1          -    Covered              
-            bin <auto[0],auto[12]>                        122          1          -    Covered              
-            bin <auto[1],auto[11]>                        109          1          -    Covered              
-            bin <auto[0],auto[11]>                        164          1          -    Covered              
-            bin <auto[1],auto[10]>                        120          1          -    Covered              
-            bin <auto[0],auto[10]>                        168          1          -    Covered              
-            bin <auto[1],auto[9]>                         140          1          -    Covered              
-            bin <auto[0],auto[9]>                         119          1          -    Covered              
-            bin <auto[1],auto[8]>                         107          1          -    Covered              
-            bin <auto[0],auto[8]>                         118          1          -    Covered              
-            bin <auto[1],auto[7]>                         102          1          -    Covered              
-            bin <auto[0],auto[7]>                         106          1          -    Covered              
-            bin <auto[1],auto[6]>                         145          1          -    Covered              
-            bin <auto[0],auto[6]>                         117          1          -    Covered              
-            bin <auto[1],auto[5]>                         115          1          -    Covered              
-            bin <auto[0],auto[5]>                         113          1          -    Covered              
-            bin <auto[1],auto[4]>                         102          1          -    Covered              
-            bin <auto[0],auto[4]>                         109          1          -    Covered              
-            bin <auto[1],auto[3]>                         111          1          -    Covered              
-            bin <auto[0],auto[3]>                         113          1          -    Covered              
-            bin <auto[1],auto[2]>                         123          1          -    Covered              
-            bin <auto[0],auto[2]>                         103          1          -    Covered              
-            bin <auto[1],auto[1]>                         148          1          -    Covered              
-            bin <auto[0],auto[1]>                         141          1          -    Covered              
-            bin <auto[1],auto[0]>                          60          1          -    Covered              
-            bin <auto[0],auto[0]>                          52          1          -    Covered              
+            bin <auto[1],auto[15]>                         69          1          -    Covered              
+            bin <auto[0],auto[15]>                         61          1          -    Covered              
+            bin <auto[1],auto[14]>                         53          1          -    Covered              
+            bin <auto[0],auto[14]>                         87          1          -    Covered              
+            bin <auto[1],auto[13]>                         72          1          -    Covered              
+            bin <auto[0],auto[13]>                         57          1          -    Covered              
+            bin <auto[1],auto[12]>                         79          1          -    Covered              
+            bin <auto[0],auto[12]>                         37          1          -    Covered              
+            bin <auto[1],auto[11]>                         46          1          -    Covered              
+            bin <auto[0],auto[11]>                         61          1          -    Covered              
+            bin <auto[1],auto[10]>                         66          1          -    Covered              
+            bin <auto[0],auto[10]>                         85          1          -    Covered              
+            bin <auto[1],auto[9]>                          60          1          -    Covered              
+            bin <auto[0],auto[9]>                          65          1          -    Covered              
+            bin <auto[1],auto[8]>                          72          1          -    Covered              
+            bin <auto[0],auto[8]>                          55          1          -    Covered              
+            bin <auto[1],auto[7]>                          60          1          -    Covered              
+            bin <auto[0],auto[7]>                          73          1          -    Covered              
+            bin <auto[1],auto[6]>                          56          1          -    Covered              
+            bin <auto[0],auto[6]>                          84          1          -    Covered              
+            bin <auto[1],auto[5]>                          76          1          -    Covered              
+            bin <auto[0],auto[5]>                          62          1          -    Covered              
+            bin <auto[1],auto[4]>                          58          1          -    Covered              
+            bin <auto[0],auto[4]>                          49          1          -    Covered              
+            bin <auto[1],auto[3]>                          75          1          -    Covered              
+            bin <auto[0],auto[3]>                          51          1          -    Covered              
+            bin <auto[1],auto[2]>                          56          1          -    Covered              
+            bin <auto[0],auto[2]>                          51          1          -    Covered              
+            bin <auto[1],auto[1]>                         105          1          -    Covered              
+            bin <auto[0],auto[1]>                          47          1          -    Covered              
+            bin <auto[1],auto[0]>                         835          1          -    Covered              
+            bin <auto[0],auto[0]>                         988          1          -    Covered              
     Cross sel_valid_crp                               100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -947,7 +1086,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                         279          1          -    Covered              
             bin <auto[0],auto[1]>                         336          1          -    Covered              
             bin <auto[1],auto[0]>                        1559          1          -    Covered              
-            bin <auto[0],auto[0]>                        1576          1          -    Covered              
+            bin <auto[0],auto[0]>                        1577          1          -    Covered              
     Cross sel_PSLVERR_crp                             100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -956,7 +1095,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                          69          1          -    Covered              
             bin <auto[0],auto[1]>                          84          1          -    Covered              
             bin <auto[1],auto[0]>                        1769          1          -    Covered              
-            bin <auto[0],auto[0]>                        1828          1          -    Covered              
+            bin <auto[0],auto[0]>                        1829          1          -    Covered              
     Cross sel_addr_crp                                 99.60%        100          -    Uncovered            
         covered/total bins:                               255        256          -                      
         missing/total bins:                                 1        256          -                      
@@ -1216,25 +1355,151 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],valid_addr[1]>                    13          1          -    Covered              
             bin <auto[0],valid_addr[1]>                     8          1          -    Covered              
             bin <auto[1],valid_addr[0]>                    17          1          -    Covered              
-            bin <auto[0],valid_addr[0]>                     8          1          -    Covered              
+            bin <auto[0],valid_addr[0]>                     9          1          -    Covered              
             bin <auto[1],valid_addr[34]>                    0          1          1    ZERO                 
 
 TOTAL COVERGROUP COVERAGE: 99.97%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/APB_top/dut/apb_wrapper_sva_inst/c_psel_onehot 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(46)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_psel_matches_sel 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(52)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pready_mux 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(58)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_prdata_mux 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(64)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pslverr_mux 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(70)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_valid_out_noerr 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(76)
+                                                                               615 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_no_x_outdata 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(82)
+                                                                               615 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_sel_stable 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(88)
+                                                                              1445 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_no_x_pready_pslverr 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(94)
+                                                                              3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pslverr_high 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(100)
+                                                                               153 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pslverr_low 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(106)
+                                                                              3508 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_setup_state 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(112)
+                                                                              1445 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_access_setup 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(118)
+                                                                               716 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_access_psel_penable 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(124)
+                                                                              1445 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_idle_to_setup 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(130)
+                                                                               729 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_idle_stays 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(137)
+                                                                                41 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_stable_setup 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(144)
+                                                                              1445 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pstrb_low_on_read 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(150)
+                                                                              1766 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_pstrb_not_low_on_write 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(156)
+                                                                              1895 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_valid_out_read_only 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(162)
+                                                                               615 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_valid_out_no_error 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(168)
+                                                                              3661 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 21
 
 ASSERTION RESULTS:
 --------------------------------------------------------------------
 Name                 File(Line)                   Failure      Pass 
                                                   Count        Count
 --------------------------------------------------------------------
-/APB_sequences_pkg/APB_write_sequence/body/#ublk#4690743#38/immed__40
-                     D:/APB UVM/APB_sequences.sv(40)
+/APB_top/dut/apb_wrapper_sva_inst/p_cs_reset
+                     D:/APB UVM/APB_sva.sv(38)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_psel_onehot
+                     D:/APB UVM/APB_sva.sv(45)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_psel_matches_sel
+                     D:/APB UVM/APB_sva.sv(51)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pready_mux
+                     D:/APB UVM/APB_sva.sv(57)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_prdata_mux
+                     D:/APB UVM/APB_sva.sv(63)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pslverr_mux
+                     D:/APB UVM/APB_sva.sv(69)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_valid_out_noerr
+                     D:/APB UVM/APB_sva.sv(75)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_no_x_outdata
+                     D:/APB UVM/APB_sva.sv(81)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_sel_stable
+                     D:/APB UVM/APB_sva.sv(87)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_no_x_pready_pslverr
+                     D:/APB UVM/APB_sva.sv(93)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pslverr_high
+                     D:/APB UVM/APB_sva.sv(99)          0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pslverr_low
+                     D:/APB UVM/APB_sva.sv(105)
                                                         0          1
-/APB_sequences_pkg/APB_read_sequence/body/#ublk#4690743#57/immed__59
-                     D:/APB UVM/APB_sequences.sv(59)
+/APB_top/dut/apb_wrapper_sva_inst/a_setup_state
+                     D:/APB UVM/APB_sva.sv(111)
                                                         0          1
-/APB_sequences_pkg/APB_read_write_sequence/body/#ublk#4690743#76/immed__78
-                     D:/APB UVM/APB_sequences.sv(78)
+/APB_top/dut/apb_wrapper_sva_inst/a_access_setup
+                     D:/APB UVM/APB_sva.sv(117)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_access_psel_penable
+                     D:/APB UVM/APB_sva.sv(123)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_idle_to_setup
+                     D:/APB UVM/APB_sva.sv(129)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_idle_stays
+                     D:/APB UVM/APB_sva.sv(136)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_stable_setup
+                     D:/APB UVM/APB_sva.sv(143)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pstrb_low_on_read
+                     D:/APB UVM/APB_sva.sv(149)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_pstrb_not_low_on_write
+                     D:/APB UVM/APB_sva.sv(155)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_valid_out_read_only
+                     D:/APB UVM/APB_sva.sv(161)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_valid_out_no_error
+                     D:/APB UVM/APB_sva.sv(167)
+                                                        0          1
+/APB_sequences_pkg/APB_write_sequence/body/#ublk#4690743#38/immed__41
+                     D:/APB UVM/APB_sequences.sv(41)
+                                                        0          1
+/APB_sequences_pkg/APB_read_sequence/body/#ublk#4690743#58/immed__60
+                     D:/APB UVM/APB_sequences.sv(60)
+                                                        0          1
+/APB_sequences_pkg/APB_read_write_sequence/body/#ublk#4690743#78/immed__82
+                     D:/APB UVM/APB_sequences.sv(82)
                                                         0          1
 
-Total Coverage By Instance (filtered view): 99.98%
+Total Coverage By Instance (filtered view): 99.99%
 

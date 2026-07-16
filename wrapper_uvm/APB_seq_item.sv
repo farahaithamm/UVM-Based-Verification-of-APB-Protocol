@@ -46,8 +46,13 @@ class APB_seq_item extends uvm_sequence_item;
         transfer == continue_transfer;
     }
 
-    constraint strb_c {
-        (wr_en == 1'b1) -> strb inside {[1:15]};
+    constraint wrstrb_c {
+        if (wr_en == 1'b1) strb inside {[1:15]};
+        else strb == 0;
+    }
+
+    constraint wstrb_c {
+        strb inside {[1:15]};
     }
 endclass
 endpackage

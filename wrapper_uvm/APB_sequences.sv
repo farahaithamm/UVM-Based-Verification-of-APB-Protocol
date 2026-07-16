@@ -37,6 +37,7 @@ class APB_write_sequence extends uvm_sequence;
         seq_item = APB_seq_item::type_id::create("seq_item");
         repeat(500) begin
             start_item(seq_item);
+            seq_item.wrstrb_c.constraint_mode(0);
             assert(seq_item.randomize());
             seq_item.wr_en = 1'b1;
             finish_item(seq_item);
@@ -58,6 +59,7 @@ class APB_read_sequence extends uvm_sequence;
             start_item(seq_item);
             assert(seq_item.randomize());
             seq_item.wr_en = 1'b0;
+            seq_item.strb = 4'b0000;
             finish_item(seq_item);
         end
     endtask
@@ -75,6 +77,8 @@ class APB_read_write_sequence extends uvm_sequence;
         seq_item = APB_seq_item::type_id::create("seq_item");
         repeat(500) begin
             start_item(seq_item);
+            seq_item.wrstrb_c.constraint_mode(1);
+            seq_item.wstrb_c.constraint_mode(0);
             assert(seq_item.randomize());
             finish_item(seq_item);
         end
