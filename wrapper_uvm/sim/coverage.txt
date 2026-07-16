@@ -1,0 +1,1240 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /APB_sequences_pkg
+=== Design Unit: work.APB_sequences_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       3         3         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/APB_sequences_pkg/APB_write_sequence/body/#ublk#4690743#38/immed__40
+                     D:/APB UVM/APB_sequences.sv(40)
+                                                        0          1
+/APB_sequences_pkg/APB_read_sequence/body/#ublk#4690743#57/immed__59
+                     D:/APB UVM/APB_sequences.sv(59)
+                                                        0          1
+/APB_sequences_pkg/APB_read_write_sequence/body/#ublk#4690743#76/immed__78
+                     D:/APB UVM/APB_sequences.sv(78)
+                                                        0          1
+
+=================================================================================
+=== Instance: /APB_subscriber_pkg
+=== Design Unit: work.APB_subscriber_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    99.97%
+        Coverpoints/Crosses         14        na        na        na
+            Covergroup Bins        462       461         1    99.78%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /APB_subscriber_pkg/APB_subscriber/cg            99.97%        100          -    Uncovered            
+    covered/total bins:                                   461        462          -                      
+    missing/total bins:                                     1        462          -                      
+    % Hit:                                             99.78%        100          -                      
+    Coverpoint PRESETn_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint addr_cp                                100.00%        100          -    Covered              
+        covered/total bins:                               128        128          -                      
+        missing/total bins:                                 0        128          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint sel_cp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint transfer_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint wr_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint strb_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint valid_out_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint PSLVERR_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_trans_crp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_wr_crp                                  100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_strb_crp                                100.00%        100          -    Covered              
+        covered/total bins:                                32         32          -                      
+        missing/total bins:                                 0         32          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_valid_crp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_PSLVERR_crp                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_addr_crp                                 99.60%        100          -    Uncovered            
+        covered/total bins:                               255        256          -                      
+        missing/total bins:                                 1        256          -                      
+        % Hit:                                         99.60%        100          -                      
+ Covergroup instance \/APB_subscriber_pkg::APB_subscriber::cg  
+                                                       99.97%        100          -    Uncovered            
+    covered/total bins:                                   461        462          -                      
+    missing/total bins:                                     1        462          -                      
+    % Hit:                                             99.78%        100          -                      
+    Coverpoint PRESETn_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rst_on                                         90          1          -    Covered              
+        bin rst_off                                      3660          1          -    Covered              
+        bin rst_on_to_off                                  34          1          -    Covered              
+        bin rst_off_to_on                                  33          1          -    Covered              
+    Coverpoint addr_cp                                100.00%        100          -    Covered              
+        covered/total bins:                               128        128          -                      
+        missing/total bins:                                 0        128          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin valid_addr[0]                                  25          1          -    Covered              
+        bin valid_addr[1]                                  21          1          -    Covered              
+        bin valid_addr[2]                                  32          1          -    Covered              
+        bin valid_addr[3]                                  20          1          -    Covered              
+        bin valid_addr[4]                                  28          1          -    Covered              
+        bin valid_addr[5]                                  24          1          -    Covered              
+        bin valid_addr[6]                                  22          1          -    Covered              
+        bin valid_addr[7]                                  25          1          -    Covered              
+        bin valid_addr[8]                                  27          1          -    Covered              
+        bin valid_addr[9]                                  24          1          -    Covered              
+        bin valid_addr[10]                                 47          1          -    Covered              
+        bin valid_addr[11]                                 14          1          -    Covered              
+        bin valid_addr[12]                                 18          1          -    Covered              
+        bin valid_addr[13]                                 20          1          -    Covered              
+        bin valid_addr[14]                                 15          1          -    Covered              
+        bin valid_addr[15]                                 14          1          -    Covered              
+        bin valid_addr[16]                                 27          1          -    Covered              
+        bin valid_addr[17]                                 17          1          -    Covered              
+        bin valid_addr[18]                                 29          1          -    Covered              
+        bin valid_addr[19]                                 41          1          -    Covered              
+        bin valid_addr[20]                                 24          1          -    Covered              
+        bin valid_addr[21]                                 30          1          -    Covered              
+        bin valid_addr[22]                                 24          1          -    Covered              
+        bin valid_addr[23]                                 26          1          -    Covered              
+        bin valid_addr[24]                                 30          1          -    Covered              
+        bin valid_addr[25]                                 38          1          -    Covered              
+        bin valid_addr[26]                                 18          1          -    Covered              
+        bin valid_addr[27]                                 28          1          -    Covered              
+        bin valid_addr[28]                                 25          1          -    Covered              
+        bin valid_addr[29]                                 19          1          -    Covered              
+        bin valid_addr[30]                                 51          1          -    Covered              
+        bin valid_addr[31]                                 15          1          -    Covered              
+        bin valid_addr[32]                                 27          1          -    Covered              
+        bin valid_addr[33]                                 19          1          -    Covered              
+        bin valid_addr[34]                                  8          1          -    Covered              
+        bin valid_addr[35]                                 26          1          -    Covered              
+        bin valid_addr[36]                                 24          1          -    Covered              
+        bin valid_addr[37]                                 35          1          -    Covered              
+        bin valid_addr[38]                                 31          1          -    Covered              
+        bin valid_addr[39]                                 16          1          -    Covered              
+        bin valid_addr[40]                                 25          1          -    Covered              
+        bin valid_addr[41]                                 41          1          -    Covered              
+        bin valid_addr[42]                                 35          1          -    Covered              
+        bin valid_addr[43]                                 22          1          -    Covered              
+        bin valid_addr[44]                                 15          1          -    Covered              
+        bin valid_addr[45]                                 25          1          -    Covered              
+        bin valid_addr[46]                                 17          1          -    Covered              
+        bin valid_addr[47]                                 23          1          -    Covered              
+        bin valid_addr[48]                                 21          1          -    Covered              
+        bin valid_addr[49]                                 30          1          -    Covered              
+        bin valid_addr[50]                                 24          1          -    Covered              
+        bin valid_addr[51]                                 24          1          -    Covered              
+        bin valid_addr[52]                                 25          1          -    Covered              
+        bin valid_addr[53]                                 37          1          -    Covered              
+        bin valid_addr[54]                                 35          1          -    Covered              
+        bin valid_addr[55]                                 26          1          -    Covered              
+        bin valid_addr[56]                                 32          1          -    Covered              
+        bin valid_addr[57]                                 22          1          -    Covered              
+        bin valid_addr[58]                                 41          1          -    Covered              
+        bin valid_addr[59]                                 45          1          -    Covered              
+        bin valid_addr[60]                                 17          1          -    Covered              
+        bin valid_addr[61]                                 11          1          -    Covered              
+        bin valid_addr[62]                                 30          1          -    Covered              
+        bin valid_addr[63]                                 21          1          -    Covered              
+        bin valid_addr[64]                                 26          1          -    Covered              
+        bin valid_addr[65]                                 27          1          -    Covered              
+        bin valid_addr[66]                                 22          1          -    Covered              
+        bin valid_addr[67]                                 19          1          -    Covered              
+        bin valid_addr[68]                                 11          1          -    Covered              
+        bin valid_addr[69]                                 21          1          -    Covered              
+        bin valid_addr[70]                                  7          1          -    Covered              
+        bin valid_addr[71]                                 18          1          -    Covered              
+        bin valid_addr[72]                                 50          1          -    Covered              
+        bin valid_addr[73]                                 20          1          -    Covered              
+        bin valid_addr[74]                                 19          1          -    Covered              
+        bin valid_addr[75]                                 28          1          -    Covered              
+        bin valid_addr[76]                                 31          1          -    Covered              
+        bin valid_addr[77]                                 24          1          -    Covered              
+        bin valid_addr[78]                                 42          1          -    Covered              
+        bin valid_addr[79]                                 40          1          -    Covered              
+        bin valid_addr[80]                                 25          1          -    Covered              
+        bin valid_addr[81]                                 40          1          -    Covered              
+        bin valid_addr[82]                                 26          1          -    Covered              
+        bin valid_addr[83]                                 27          1          -    Covered              
+        bin valid_addr[84]                                 27          1          -    Covered              
+        bin valid_addr[85]                                 22          1          -    Covered              
+        bin valid_addr[86]                                 28          1          -    Covered              
+        bin valid_addr[87]                                 13          1          -    Covered              
+        bin valid_addr[88]                                 18          1          -    Covered              
+        bin valid_addr[89]                                 25          1          -    Covered              
+        bin valid_addr[90]                                 21          1          -    Covered              
+        bin valid_addr[91]                                 21          1          -    Covered              
+        bin valid_addr[92]                                 25          1          -    Covered              
+        bin valid_addr[93]                                 36          1          -    Covered              
+        bin valid_addr[94]                                 19          1          -    Covered              
+        bin valid_addr[95]                                 43          1          -    Covered              
+        bin valid_addr[96]                                 34          1          -    Covered              
+        bin valid_addr[97]                                 18          1          -    Covered              
+        bin valid_addr[98]                                 19          1          -    Covered              
+        bin valid_addr[99]                                 32          1          -    Covered              
+        bin valid_addr[100]                                29          1          -    Covered              
+        bin valid_addr[101]                                18          1          -    Covered              
+        bin valid_addr[102]                                38          1          -    Covered              
+        bin valid_addr[103]                                18          1          -    Covered              
+        bin valid_addr[104]                                20          1          -    Covered              
+        bin valid_addr[105]                                22          1          -    Covered              
+        bin valid_addr[106]                                 8          1          -    Covered              
+        bin valid_addr[107]                                25          1          -    Covered              
+        bin valid_addr[108]                                25          1          -    Covered              
+        bin valid_addr[109]                                14          1          -    Covered              
+        bin valid_addr[110]                                29          1          -    Covered              
+        bin valid_addr[111]                                30          1          -    Covered              
+        bin valid_addr[112]                                41          1          -    Covered              
+        bin valid_addr[113]                                33          1          -    Covered              
+        bin valid_addr[114]                                16          1          -    Covered              
+        bin valid_addr[115]                                44          1          -    Covered              
+        bin valid_addr[116]                                26          1          -    Covered              
+        bin valid_addr[117]                                35          1          -    Covered              
+        bin valid_addr[118]                                17          1          -    Covered              
+        bin valid_addr[119]                                33          1          -    Covered              
+        bin valid_addr[120]                                28          1          -    Covered              
+        bin valid_addr[121]                                24          1          -    Covered              
+        bin valid_addr[122]                                35          1          -    Covered              
+        bin valid_addr[123]                                36          1          -    Covered              
+        bin valid_addr[124]                                34          1          -    Covered              
+        bin valid_addr[125]                                32          1          -    Covered              
+        bin valid_addr[126]                                36          1          -    Covered              
+        bin valid_addr[127]                                37          1          -    Covered              
+    Coverpoint sel_cp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1912          1          -    Covered              
+        bin auto[1]                                      1838          1          -    Covered              
+    Coverpoint transfer_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1500          1          -    Covered              
+        bin auto[1]                                      2250          1          -    Covered              
+    Coverpoint wr_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1822          1          -    Covered              
+        bin auto[1]                                      1928          1          -    Covered              
+    Coverpoint strb_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       112          1          -    Covered              
+        bin auto[1]                                       289          1          -    Covered              
+        bin auto[2]                                       226          1          -    Covered              
+        bin auto[3]                                       224          1          -    Covered              
+        bin auto[4]                                       211          1          -    Covered              
+        bin auto[5]                                       228          1          -    Covered              
+        bin auto[6]                                       262          1          -    Covered              
+        bin auto[7]                                       208          1          -    Covered              
+        bin auto[8]                                       225          1          -    Covered              
+        bin auto[9]                                       259          1          -    Covered              
+        bin auto[10]                                      288          1          -    Covered              
+        bin auto[11]                                      273          1          -    Covered              
+        bin auto[12]                                      274          1          -    Covered              
+        bin auto[13]                                      198          1          -    Covered              
+        bin auto[14]                                      234          1          -    Covered              
+        bin auto[15]                                      239          1          -    Covered              
+    Coverpoint valid_out_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3136          1          -    Covered              
+        bin auto[1]                                       615          1          -    Covered              
+    Coverpoint PSLVERR_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3598          1          -    Covered              
+        bin auto[1]                                       153          1          -    Covered              
+    Cross sel_trans_crp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                        1131          1          -    Covered              
+            bin <auto[0],auto[1]>                        1119          1          -    Covered              
+            bin <auto[1],auto[0]>                         707          1          -    Covered              
+            bin <auto[0],auto[0]>                         793          1          -    Covered              
+    Cross sel_wr_crp                                  100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                        1003          1          -    Covered              
+            bin <auto[0],auto[1]>                         925          1          -    Covered              
+            bin <auto[1],auto[0]>                         835          1          -    Covered              
+            bin <auto[0],auto[0]>                         987          1          -    Covered              
+    Cross sel_strb_crp                                100.00%        100          -    Covered              
+        covered/total bins:                                32         32          -                      
+        missing/total bins:                                 0         32          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[15]>                         94          1          -    Covered              
+            bin <auto[0],auto[15]>                        145          1          -    Covered              
+            bin <auto[1],auto[14]>                        105          1          -    Covered              
+            bin <auto[0],auto[14]>                        129          1          -    Covered              
+            bin <auto[1],auto[13]>                        105          1          -    Covered              
+            bin <auto[0],auto[13]>                         93          1          -    Covered              
+            bin <auto[1],auto[12]>                        152          1          -    Covered              
+            bin <auto[0],auto[12]>                        122          1          -    Covered              
+            bin <auto[1],auto[11]>                        109          1          -    Covered              
+            bin <auto[0],auto[11]>                        164          1          -    Covered              
+            bin <auto[1],auto[10]>                        120          1          -    Covered              
+            bin <auto[0],auto[10]>                        168          1          -    Covered              
+            bin <auto[1],auto[9]>                         140          1          -    Covered              
+            bin <auto[0],auto[9]>                         119          1          -    Covered              
+            bin <auto[1],auto[8]>                         107          1          -    Covered              
+            bin <auto[0],auto[8]>                         118          1          -    Covered              
+            bin <auto[1],auto[7]>                         102          1          -    Covered              
+            bin <auto[0],auto[7]>                         106          1          -    Covered              
+            bin <auto[1],auto[6]>                         145          1          -    Covered              
+            bin <auto[0],auto[6]>                         117          1          -    Covered              
+            bin <auto[1],auto[5]>                         115          1          -    Covered              
+            bin <auto[0],auto[5]>                         113          1          -    Covered              
+            bin <auto[1],auto[4]>                         102          1          -    Covered              
+            bin <auto[0],auto[4]>                         109          1          -    Covered              
+            bin <auto[1],auto[3]>                         111          1          -    Covered              
+            bin <auto[0],auto[3]>                         113          1          -    Covered              
+            bin <auto[1],auto[2]>                         123          1          -    Covered              
+            bin <auto[0],auto[2]>                         103          1          -    Covered              
+            bin <auto[1],auto[1]>                         148          1          -    Covered              
+            bin <auto[0],auto[1]>                         141          1          -    Covered              
+            bin <auto[1],auto[0]>                          60          1          -    Covered              
+            bin <auto[0],auto[0]>                          52          1          -    Covered              
+    Cross sel_valid_crp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                         279          1          -    Covered              
+            bin <auto[0],auto[1]>                         336          1          -    Covered              
+            bin <auto[1],auto[0]>                        1559          1          -    Covered              
+            bin <auto[0],auto[0]>                        1576          1          -    Covered              
+    Cross sel_PSLVERR_crp                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                          69          1          -    Covered              
+            bin <auto[0],auto[1]>                          84          1          -    Covered              
+            bin <auto[1],auto[0]>                        1769          1          -    Covered              
+            bin <auto[0],auto[0]>                        1828          1          -    Covered              
+    Cross sel_addr_crp                                 99.60%        100          -    Uncovered            
+        covered/total bins:                               255        256          -                      
+        missing/total bins:                                 1        256          -                      
+        % Hit:                                         99.60%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],valid_addr[127]>                  20          1          -    Covered              
+            bin <auto[0],valid_addr[127]>                  17          1          -    Covered              
+            bin <auto[1],valid_addr[126]>                  17          1          -    Covered              
+            bin <auto[0],valid_addr[126]>                  19          1          -    Covered              
+            bin <auto[1],valid_addr[125]>                  21          1          -    Covered              
+            bin <auto[0],valid_addr[125]>                  11          1          -    Covered              
+            bin <auto[1],valid_addr[124]>                  15          1          -    Covered              
+            bin <auto[0],valid_addr[124]>                  19          1          -    Covered              
+            bin <auto[1],valid_addr[123]>                  16          1          -    Covered              
+            bin <auto[0],valid_addr[123]>                  20          1          -    Covered              
+            bin <auto[1],valid_addr[122]>                  18          1          -    Covered              
+            bin <auto[0],valid_addr[122]>                  17          1          -    Covered              
+            bin <auto[1],valid_addr[121]>                   7          1          -    Covered              
+            bin <auto[0],valid_addr[121]>                  17          1          -    Covered              
+            bin <auto[1],valid_addr[120]>                  12          1          -    Covered              
+            bin <auto[0],valid_addr[120]>                  16          1          -    Covered              
+            bin <auto[1],valid_addr[119]>                  13          1          -    Covered              
+            bin <auto[0],valid_addr[119]>                  20          1          -    Covered              
+            bin <auto[1],valid_addr[118]>                   8          1          -    Covered              
+            bin <auto[0],valid_addr[118]>                   9          1          -    Covered              
+            bin <auto[1],valid_addr[117]>                  14          1          -    Covered              
+            bin <auto[0],valid_addr[117]>                  21          1          -    Covered              
+            bin <auto[1],valid_addr[116]>                  14          1          -    Covered              
+            bin <auto[0],valid_addr[116]>                  12          1          -    Covered              
+            bin <auto[1],valid_addr[115]>                  21          1          -    Covered              
+            bin <auto[0],valid_addr[115]>                  23          1          -    Covered              
+            bin <auto[1],valid_addr[114]>                   6          1          -    Covered              
+            bin <auto[0],valid_addr[114]>                  10          1          -    Covered              
+            bin <auto[1],valid_addr[113]>                  19          1          -    Covered              
+            bin <auto[0],valid_addr[113]>                  14          1          -    Covered              
+            bin <auto[1],valid_addr[112]>                  18          1          -    Covered              
+            bin <auto[0],valid_addr[112]>                  23          1          -    Covered              
+            bin <auto[1],valid_addr[111]>                   9          1          -    Covered              
+            bin <auto[0],valid_addr[111]>                  21          1          -    Covered              
+            bin <auto[1],valid_addr[110]>                  16          1          -    Covered              
+            bin <auto[0],valid_addr[110]>                  13          1          -    Covered              
+            bin <auto[1],valid_addr[109]>                   6          1          -    Covered              
+            bin <auto[0],valid_addr[109]>                   8          1          -    Covered              
+            bin <auto[1],valid_addr[108]>                   7          1          -    Covered              
+            bin <auto[0],valid_addr[108]>                  18          1          -    Covered              
+            bin <auto[1],valid_addr[107]>                  10          1          -    Covered              
+            bin <auto[0],valid_addr[107]>                  15          1          -    Covered              
+            bin <auto[1],valid_addr[106]>                   2          1          -    Covered              
+            bin <auto[0],valid_addr[106]>                   6          1          -    Covered              
+            bin <auto[1],valid_addr[105]>                  14          1          -    Covered              
+            bin <auto[0],valid_addr[105]>                   8          1          -    Covered              
+            bin <auto[1],valid_addr[104]>                  16          1          -    Covered              
+            bin <auto[0],valid_addr[104]>                   4          1          -    Covered              
+            bin <auto[1],valid_addr[103]>                  13          1          -    Covered              
+            bin <auto[0],valid_addr[103]>                   5          1          -    Covered              
+            bin <auto[1],valid_addr[102]>                  17          1          -    Covered              
+            bin <auto[0],valid_addr[102]>                  21          1          -    Covered              
+            bin <auto[1],valid_addr[101]>                   5          1          -    Covered              
+            bin <auto[0],valid_addr[101]>                  13          1          -    Covered              
+            bin <auto[1],valid_addr[100]>                  13          1          -    Covered              
+            bin <auto[0],valid_addr[100]>                  16          1          -    Covered              
+            bin <auto[1],valid_addr[99]>                    9          1          -    Covered              
+            bin <auto[0],valid_addr[99]>                   23          1          -    Covered              
+            bin <auto[1],valid_addr[98]>                    6          1          -    Covered              
+            bin <auto[0],valid_addr[98]>                   13          1          -    Covered              
+            bin <auto[1],valid_addr[97]>                   15          1          -    Covered              
+            bin <auto[0],valid_addr[97]>                    3          1          -    Covered              
+            bin <auto[1],valid_addr[96]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[96]>                   21          1          -    Covered              
+            bin <auto[1],valid_addr[95]>                   20          1          -    Covered              
+            bin <auto[0],valid_addr[95]>                   23          1          -    Covered              
+            bin <auto[1],valid_addr[94]>                    3          1          -    Covered              
+            bin <auto[0],valid_addr[94]>                   16          1          -    Covered              
+            bin <auto[1],valid_addr[93]>                   15          1          -    Covered              
+            bin <auto[0],valid_addr[93]>                   21          1          -    Covered              
+            bin <auto[1],valid_addr[92]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[92]>                   15          1          -    Covered              
+            bin <auto[1],valid_addr[91]>                    9          1          -    Covered              
+            bin <auto[0],valid_addr[91]>                   12          1          -    Covered              
+            bin <auto[1],valid_addr[90]>                    6          1          -    Covered              
+            bin <auto[0],valid_addr[90]>                   15          1          -    Covered              
+            bin <auto[1],valid_addr[89]>                    7          1          -    Covered              
+            bin <auto[0],valid_addr[89]>                   18          1          -    Covered              
+            bin <auto[1],valid_addr[88]>                    8          1          -    Covered              
+            bin <auto[0],valid_addr[88]>                   10          1          -    Covered              
+            bin <auto[1],valid_addr[87]>                    4          1          -    Covered              
+            bin <auto[0],valid_addr[87]>                    9          1          -    Covered              
+            bin <auto[1],valid_addr[86]>                   16          1          -    Covered              
+            bin <auto[0],valid_addr[86]>                   12          1          -    Covered              
+            bin <auto[1],valid_addr[85]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[85]>                   12          1          -    Covered              
+            bin <auto[1],valid_addr[84]>                   16          1          -    Covered              
+            bin <auto[0],valid_addr[84]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[83]>                   16          1          -    Covered              
+            bin <auto[0],valid_addr[83]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[82]>                   18          1          -    Covered              
+            bin <auto[0],valid_addr[82]>                    8          1          -    Covered              
+            bin <auto[1],valid_addr[81]>                   22          1          -    Covered              
+            bin <auto[0],valid_addr[81]>                   18          1          -    Covered              
+            bin <auto[1],valid_addr[80]>                   16          1          -    Covered              
+            bin <auto[0],valid_addr[80]>                    9          1          -    Covered              
+            bin <auto[1],valid_addr[79]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[79]>                   26          1          -    Covered              
+            bin <auto[1],valid_addr[78]>                   20          1          -    Covered              
+            bin <auto[0],valid_addr[78]>                   22          1          -    Covered              
+            bin <auto[1],valid_addr[77]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[77]>                   10          1          -    Covered              
+            bin <auto[1],valid_addr[76]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[76]>                   18          1          -    Covered              
+            bin <auto[1],valid_addr[75]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[75]>                   15          1          -    Covered              
+            bin <auto[1],valid_addr[74]>                    7          1          -    Covered              
+            bin <auto[0],valid_addr[74]>                   12          1          -    Covered              
+            bin <auto[1],valid_addr[73]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[73]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[72]>                   22          1          -    Covered              
+            bin <auto[0],valid_addr[72]>                   28          1          -    Covered              
+            bin <auto[1],valid_addr[71]>                    8          1          -    Covered              
+            bin <auto[0],valid_addr[71]>                   10          1          -    Covered              
+            bin <auto[1],valid_addr[70]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[70]>                    2          1          -    Covered              
+            bin <auto[1],valid_addr[69]>                   11          1          -    Covered              
+            bin <auto[0],valid_addr[69]>                   10          1          -    Covered              
+            bin <auto[1],valid_addr[68]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[68]>                    6          1          -    Covered              
+            bin <auto[1],valid_addr[67]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[67]>                    6          1          -    Covered              
+            bin <auto[1],valid_addr[66]>                    8          1          -    Covered              
+            bin <auto[0],valid_addr[66]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[65]>                   19          1          -    Covered              
+            bin <auto[0],valid_addr[65]>                    8          1          -    Covered              
+            bin <auto[1],valid_addr[64]>                   15          1          -    Covered              
+            bin <auto[0],valid_addr[64]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[63]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[63]>                   16          1          -    Covered              
+            bin <auto[1],valid_addr[62]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[62]>                   17          1          -    Covered              
+            bin <auto[1],valid_addr[61]>                    2          1          -    Covered              
+            bin <auto[0],valid_addr[61]>                    9          1          -    Covered              
+            bin <auto[1],valid_addr[60]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[60]>                    3          1          -    Covered              
+            bin <auto[1],valid_addr[59]>                   17          1          -    Covered              
+            bin <auto[0],valid_addr[59]>                   28          1          -    Covered              
+            bin <auto[1],valid_addr[58]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[58]>                   31          1          -    Covered              
+            bin <auto[1],valid_addr[57]>                   11          1          -    Covered              
+            bin <auto[0],valid_addr[57]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[56]>                   11          1          -    Covered              
+            bin <auto[0],valid_addr[56]>                   21          1          -    Covered              
+            bin <auto[1],valid_addr[55]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[55]>                   21          1          -    Covered              
+            bin <auto[1],valid_addr[54]>                   16          1          -    Covered              
+            bin <auto[0],valid_addr[54]>                   19          1          -    Covered              
+            bin <auto[1],valid_addr[53]>                   17          1          -    Covered              
+            bin <auto[0],valid_addr[53]>                   20          1          -    Covered              
+            bin <auto[1],valid_addr[52]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[52]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[51]>                   19          1          -    Covered              
+            bin <auto[0],valid_addr[51]>                    5          1          -    Covered              
+            bin <auto[1],valid_addr[50]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[50]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[49]>                   21          1          -    Covered              
+            bin <auto[0],valid_addr[49]>                    9          1          -    Covered              
+            bin <auto[1],valid_addr[48]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[48]>                   16          1          -    Covered              
+            bin <auto[1],valid_addr[47]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[47]>                    9          1          -    Covered              
+            bin <auto[1],valid_addr[46]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[46]>                   12          1          -    Covered              
+            bin <auto[1],valid_addr[45]>                   18          1          -    Covered              
+            bin <auto[0],valid_addr[45]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[44]>                    8          1          -    Covered              
+            bin <auto[0],valid_addr[44]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[43]>                   15          1          -    Covered              
+            bin <auto[0],valid_addr[43]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[42]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[42]>                   21          1          -    Covered              
+            bin <auto[1],valid_addr[41]>                   28          1          -    Covered              
+            bin <auto[0],valid_addr[41]>                   13          1          -    Covered              
+            bin <auto[1],valid_addr[40]>                    7          1          -    Covered              
+            bin <auto[0],valid_addr[40]>                   18          1          -    Covered              
+            bin <auto[1],valid_addr[39]>                   11          1          -    Covered              
+            bin <auto[0],valid_addr[39]>                    5          1          -    Covered              
+            bin <auto[1],valid_addr[38]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[38]>                   17          1          -    Covered              
+            bin <auto[1],valid_addr[37]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[37]>                   22          1          -    Covered              
+            bin <auto[1],valid_addr[36]>                   17          1          -    Covered              
+            bin <auto[0],valid_addr[36]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[35]>                   18          1          -    Covered              
+            bin <auto[0],valid_addr[35]>                    8          1          -    Covered              
+            bin <auto[0],valid_addr[34]>                    8          1          -    Covered              
+            bin <auto[1],valid_addr[33]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[33]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[32]>                   12          1          -    Covered              
+            bin <auto[0],valid_addr[32]>                   15          1          -    Covered              
+            bin <auto[1],valid_addr[31]>                    9          1          -    Covered              
+            bin <auto[0],valid_addr[31]>                    6          1          -    Covered              
+            bin <auto[1],valid_addr[30]>                   35          1          -    Covered              
+            bin <auto[0],valid_addr[30]>                   16          1          -    Covered              
+            bin <auto[1],valid_addr[29]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[29]>                    6          1          -    Covered              
+            bin <auto[1],valid_addr[28]>                   18          1          -    Covered              
+            bin <auto[0],valid_addr[28]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[27]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[27]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[26]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[26]>                    8          1          -    Covered              
+            bin <auto[1],valid_addr[25]>                   22          1          -    Covered              
+            bin <auto[0],valid_addr[25]>                   16          1          -    Covered              
+            bin <auto[1],valid_addr[24]>                   23          1          -    Covered              
+            bin <auto[0],valid_addr[24]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[23]>                   12          1          -    Covered              
+            bin <auto[0],valid_addr[23]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[22]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[22]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[21]>                   11          1          -    Covered              
+            bin <auto[0],valid_addr[21]>                   19          1          -    Covered              
+            bin <auto[1],valid_addr[20]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[20]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[19]>                   24          1          -    Covered              
+            bin <auto[0],valid_addr[19]>                   17          1          -    Covered              
+            bin <auto[1],valid_addr[18]>                   22          1          -    Covered              
+            bin <auto[0],valid_addr[18]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[17]>                    6          1          -    Covered              
+            bin <auto[0],valid_addr[17]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[16]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[16]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[15]>                    7          1          -    Covered              
+            bin <auto[0],valid_addr[15]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[14]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[14]>                    5          1          -    Covered              
+            bin <auto[1],valid_addr[13]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[13]>                   10          1          -    Covered              
+            bin <auto[1],valid_addr[12]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[12]>                    8          1          -    Covered              
+            bin <auto[1],valid_addr[11]>                    3          1          -    Covered              
+            bin <auto[0],valid_addr[11]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[10]>                   24          1          -    Covered              
+            bin <auto[0],valid_addr[10]>                   23          1          -    Covered              
+            bin <auto[1],valid_addr[9]>                    10          1          -    Covered              
+            bin <auto[0],valid_addr[9]>                    14          1          -    Covered              
+            bin <auto[1],valid_addr[8]>                    19          1          -    Covered              
+            bin <auto[0],valid_addr[8]>                     8          1          -    Covered              
+            bin <auto[1],valid_addr[7]>                    13          1          -    Covered              
+            bin <auto[0],valid_addr[7]>                    12          1          -    Covered              
+            bin <auto[1],valid_addr[6]>                    17          1          -    Covered              
+            bin <auto[0],valid_addr[6]>                     5          1          -    Covered              
+            bin <auto[1],valid_addr[5]>                    13          1          -    Covered              
+            bin <auto[0],valid_addr[5]>                    11          1          -    Covered              
+            bin <auto[1],valid_addr[4]>                    14          1          -    Covered              
+            bin <auto[0],valid_addr[4]>                    14          1          -    Covered              
+            bin <auto[1],valid_addr[3]>                     9          1          -    Covered              
+            bin <auto[0],valid_addr[3]>                    11          1          -    Covered              
+            bin <auto[1],valid_addr[2]>                    15          1          -    Covered              
+            bin <auto[0],valid_addr[2]>                    17          1          -    Covered              
+            bin <auto[1],valid_addr[1]>                    13          1          -    Covered              
+            bin <auto[0],valid_addr[1]>                     8          1          -    Covered              
+            bin <auto[1],valid_addr[0]>                    17          1          -    Covered              
+            bin <auto[0],valid_addr[0]>                     8          1          -    Covered              
+            bin <auto[1],valid_addr[34]>                    0          1          1    ZERO                 
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /APB_subscriber_pkg/APB_subscriber/cg            99.97%        100          -    Uncovered            
+    covered/total bins:                                   461        462          -                      
+    missing/total bins:                                     1        462          -                      
+    % Hit:                                             99.78%        100          -                      
+    Coverpoint PRESETn_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint addr_cp                                100.00%        100          -    Covered              
+        covered/total bins:                               128        128          -                      
+        missing/total bins:                                 0        128          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint sel_cp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint transfer_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint wr_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint strb_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint valid_out_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint PSLVERR_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_trans_crp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_wr_crp                                  100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_strb_crp                                100.00%        100          -    Covered              
+        covered/total bins:                                32         32          -                      
+        missing/total bins:                                 0         32          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_valid_crp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_PSLVERR_crp                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross sel_addr_crp                                 99.60%        100          -    Uncovered            
+        covered/total bins:                               255        256          -                      
+        missing/total bins:                                 1        256          -                      
+        % Hit:                                         99.60%        100          -                      
+ Covergroup instance \/APB_subscriber_pkg::APB_subscriber::cg  
+                                                       99.97%        100          -    Uncovered            
+    covered/total bins:                                   461        462          -                      
+    missing/total bins:                                     1        462          -                      
+    % Hit:                                             99.78%        100          -                      
+    Coverpoint PRESETn_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rst_on                                         90          1          -    Covered              
+        bin rst_off                                      3660          1          -    Covered              
+        bin rst_on_to_off                                  34          1          -    Covered              
+        bin rst_off_to_on                                  33          1          -    Covered              
+    Coverpoint addr_cp                                100.00%        100          -    Covered              
+        covered/total bins:                               128        128          -                      
+        missing/total bins:                                 0        128          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin valid_addr[0]                                  25          1          -    Covered              
+        bin valid_addr[1]                                  21          1          -    Covered              
+        bin valid_addr[2]                                  32          1          -    Covered              
+        bin valid_addr[3]                                  20          1          -    Covered              
+        bin valid_addr[4]                                  28          1          -    Covered              
+        bin valid_addr[5]                                  24          1          -    Covered              
+        bin valid_addr[6]                                  22          1          -    Covered              
+        bin valid_addr[7]                                  25          1          -    Covered              
+        bin valid_addr[8]                                  27          1          -    Covered              
+        bin valid_addr[9]                                  24          1          -    Covered              
+        bin valid_addr[10]                                 47          1          -    Covered              
+        bin valid_addr[11]                                 14          1          -    Covered              
+        bin valid_addr[12]                                 18          1          -    Covered              
+        bin valid_addr[13]                                 20          1          -    Covered              
+        bin valid_addr[14]                                 15          1          -    Covered              
+        bin valid_addr[15]                                 14          1          -    Covered              
+        bin valid_addr[16]                                 27          1          -    Covered              
+        bin valid_addr[17]                                 17          1          -    Covered              
+        bin valid_addr[18]                                 29          1          -    Covered              
+        bin valid_addr[19]                                 41          1          -    Covered              
+        bin valid_addr[20]                                 24          1          -    Covered              
+        bin valid_addr[21]                                 30          1          -    Covered              
+        bin valid_addr[22]                                 24          1          -    Covered              
+        bin valid_addr[23]                                 26          1          -    Covered              
+        bin valid_addr[24]                                 30          1          -    Covered              
+        bin valid_addr[25]                                 38          1          -    Covered              
+        bin valid_addr[26]                                 18          1          -    Covered              
+        bin valid_addr[27]                                 28          1          -    Covered              
+        bin valid_addr[28]                                 25          1          -    Covered              
+        bin valid_addr[29]                                 19          1          -    Covered              
+        bin valid_addr[30]                                 51          1          -    Covered              
+        bin valid_addr[31]                                 15          1          -    Covered              
+        bin valid_addr[32]                                 27          1          -    Covered              
+        bin valid_addr[33]                                 19          1          -    Covered              
+        bin valid_addr[34]                                  8          1          -    Covered              
+        bin valid_addr[35]                                 26          1          -    Covered              
+        bin valid_addr[36]                                 24          1          -    Covered              
+        bin valid_addr[37]                                 35          1          -    Covered              
+        bin valid_addr[38]                                 31          1          -    Covered              
+        bin valid_addr[39]                                 16          1          -    Covered              
+        bin valid_addr[40]                                 25          1          -    Covered              
+        bin valid_addr[41]                                 41          1          -    Covered              
+        bin valid_addr[42]                                 35          1          -    Covered              
+        bin valid_addr[43]                                 22          1          -    Covered              
+        bin valid_addr[44]                                 15          1          -    Covered              
+        bin valid_addr[45]                                 25          1          -    Covered              
+        bin valid_addr[46]                                 17          1          -    Covered              
+        bin valid_addr[47]                                 23          1          -    Covered              
+        bin valid_addr[48]                                 21          1          -    Covered              
+        bin valid_addr[49]                                 30          1          -    Covered              
+        bin valid_addr[50]                                 24          1          -    Covered              
+        bin valid_addr[51]                                 24          1          -    Covered              
+        bin valid_addr[52]                                 25          1          -    Covered              
+        bin valid_addr[53]                                 37          1          -    Covered              
+        bin valid_addr[54]                                 35          1          -    Covered              
+        bin valid_addr[55]                                 26          1          -    Covered              
+        bin valid_addr[56]                                 32          1          -    Covered              
+        bin valid_addr[57]                                 22          1          -    Covered              
+        bin valid_addr[58]                                 41          1          -    Covered              
+        bin valid_addr[59]                                 45          1          -    Covered              
+        bin valid_addr[60]                                 17          1          -    Covered              
+        bin valid_addr[61]                                 11          1          -    Covered              
+        bin valid_addr[62]                                 30          1          -    Covered              
+        bin valid_addr[63]                                 21          1          -    Covered              
+        bin valid_addr[64]                                 26          1          -    Covered              
+        bin valid_addr[65]                                 27          1          -    Covered              
+        bin valid_addr[66]                                 22          1          -    Covered              
+        bin valid_addr[67]                                 19          1          -    Covered              
+        bin valid_addr[68]                                 11          1          -    Covered              
+        bin valid_addr[69]                                 21          1          -    Covered              
+        bin valid_addr[70]                                  7          1          -    Covered              
+        bin valid_addr[71]                                 18          1          -    Covered              
+        bin valid_addr[72]                                 50          1          -    Covered              
+        bin valid_addr[73]                                 20          1          -    Covered              
+        bin valid_addr[74]                                 19          1          -    Covered              
+        bin valid_addr[75]                                 28          1          -    Covered              
+        bin valid_addr[76]                                 31          1          -    Covered              
+        bin valid_addr[77]                                 24          1          -    Covered              
+        bin valid_addr[78]                                 42          1          -    Covered              
+        bin valid_addr[79]                                 40          1          -    Covered              
+        bin valid_addr[80]                                 25          1          -    Covered              
+        bin valid_addr[81]                                 40          1          -    Covered              
+        bin valid_addr[82]                                 26          1          -    Covered              
+        bin valid_addr[83]                                 27          1          -    Covered              
+        bin valid_addr[84]                                 27          1          -    Covered              
+        bin valid_addr[85]                                 22          1          -    Covered              
+        bin valid_addr[86]                                 28          1          -    Covered              
+        bin valid_addr[87]                                 13          1          -    Covered              
+        bin valid_addr[88]                                 18          1          -    Covered              
+        bin valid_addr[89]                                 25          1          -    Covered              
+        bin valid_addr[90]                                 21          1          -    Covered              
+        bin valid_addr[91]                                 21          1          -    Covered              
+        bin valid_addr[92]                                 25          1          -    Covered              
+        bin valid_addr[93]                                 36          1          -    Covered              
+        bin valid_addr[94]                                 19          1          -    Covered              
+        bin valid_addr[95]                                 43          1          -    Covered              
+        bin valid_addr[96]                                 34          1          -    Covered              
+        bin valid_addr[97]                                 18          1          -    Covered              
+        bin valid_addr[98]                                 19          1          -    Covered              
+        bin valid_addr[99]                                 32          1          -    Covered              
+        bin valid_addr[100]                                29          1          -    Covered              
+        bin valid_addr[101]                                18          1          -    Covered              
+        bin valid_addr[102]                                38          1          -    Covered              
+        bin valid_addr[103]                                18          1          -    Covered              
+        bin valid_addr[104]                                20          1          -    Covered              
+        bin valid_addr[105]                                22          1          -    Covered              
+        bin valid_addr[106]                                 8          1          -    Covered              
+        bin valid_addr[107]                                25          1          -    Covered              
+        bin valid_addr[108]                                25          1          -    Covered              
+        bin valid_addr[109]                                14          1          -    Covered              
+        bin valid_addr[110]                                29          1          -    Covered              
+        bin valid_addr[111]                                30          1          -    Covered              
+        bin valid_addr[112]                                41          1          -    Covered              
+        bin valid_addr[113]                                33          1          -    Covered              
+        bin valid_addr[114]                                16          1          -    Covered              
+        bin valid_addr[115]                                44          1          -    Covered              
+        bin valid_addr[116]                                26          1          -    Covered              
+        bin valid_addr[117]                                35          1          -    Covered              
+        bin valid_addr[118]                                17          1          -    Covered              
+        bin valid_addr[119]                                33          1          -    Covered              
+        bin valid_addr[120]                                28          1          -    Covered              
+        bin valid_addr[121]                                24          1          -    Covered              
+        bin valid_addr[122]                                35          1          -    Covered              
+        bin valid_addr[123]                                36          1          -    Covered              
+        bin valid_addr[124]                                34          1          -    Covered              
+        bin valid_addr[125]                                32          1          -    Covered              
+        bin valid_addr[126]                                36          1          -    Covered              
+        bin valid_addr[127]                                37          1          -    Covered              
+    Coverpoint sel_cp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1912          1          -    Covered              
+        bin auto[1]                                      1838          1          -    Covered              
+    Coverpoint transfer_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1500          1          -    Covered              
+        bin auto[1]                                      2250          1          -    Covered              
+    Coverpoint wr_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1822          1          -    Covered              
+        bin auto[1]                                      1928          1          -    Covered              
+    Coverpoint strb_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       112          1          -    Covered              
+        bin auto[1]                                       289          1          -    Covered              
+        bin auto[2]                                       226          1          -    Covered              
+        bin auto[3]                                       224          1          -    Covered              
+        bin auto[4]                                       211          1          -    Covered              
+        bin auto[5]                                       228          1          -    Covered              
+        bin auto[6]                                       262          1          -    Covered              
+        bin auto[7]                                       208          1          -    Covered              
+        bin auto[8]                                       225          1          -    Covered              
+        bin auto[9]                                       259          1          -    Covered              
+        bin auto[10]                                      288          1          -    Covered              
+        bin auto[11]                                      273          1          -    Covered              
+        bin auto[12]                                      274          1          -    Covered              
+        bin auto[13]                                      198          1          -    Covered              
+        bin auto[14]                                      234          1          -    Covered              
+        bin auto[15]                                      239          1          -    Covered              
+    Coverpoint valid_out_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3136          1          -    Covered              
+        bin auto[1]                                       615          1          -    Covered              
+    Coverpoint PSLVERR_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3598          1          -    Covered              
+        bin auto[1]                                       153          1          -    Covered              
+    Cross sel_trans_crp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                        1131          1          -    Covered              
+            bin <auto[0],auto[1]>                        1119          1          -    Covered              
+            bin <auto[1],auto[0]>                         707          1          -    Covered              
+            bin <auto[0],auto[0]>                         793          1          -    Covered              
+    Cross sel_wr_crp                                  100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                        1003          1          -    Covered              
+            bin <auto[0],auto[1]>                         925          1          -    Covered              
+            bin <auto[1],auto[0]>                         835          1          -    Covered              
+            bin <auto[0],auto[0]>                         987          1          -    Covered              
+    Cross sel_strb_crp                                100.00%        100          -    Covered              
+        covered/total bins:                                32         32          -                      
+        missing/total bins:                                 0         32          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[15]>                         94          1          -    Covered              
+            bin <auto[0],auto[15]>                        145          1          -    Covered              
+            bin <auto[1],auto[14]>                        105          1          -    Covered              
+            bin <auto[0],auto[14]>                        129          1          -    Covered              
+            bin <auto[1],auto[13]>                        105          1          -    Covered              
+            bin <auto[0],auto[13]>                         93          1          -    Covered              
+            bin <auto[1],auto[12]>                        152          1          -    Covered              
+            bin <auto[0],auto[12]>                        122          1          -    Covered              
+            bin <auto[1],auto[11]>                        109          1          -    Covered              
+            bin <auto[0],auto[11]>                        164          1          -    Covered              
+            bin <auto[1],auto[10]>                        120          1          -    Covered              
+            bin <auto[0],auto[10]>                        168          1          -    Covered              
+            bin <auto[1],auto[9]>                         140          1          -    Covered              
+            bin <auto[0],auto[9]>                         119          1          -    Covered              
+            bin <auto[1],auto[8]>                         107          1          -    Covered              
+            bin <auto[0],auto[8]>                         118          1          -    Covered              
+            bin <auto[1],auto[7]>                         102          1          -    Covered              
+            bin <auto[0],auto[7]>                         106          1          -    Covered              
+            bin <auto[1],auto[6]>                         145          1          -    Covered              
+            bin <auto[0],auto[6]>                         117          1          -    Covered              
+            bin <auto[1],auto[5]>                         115          1          -    Covered              
+            bin <auto[0],auto[5]>                         113          1          -    Covered              
+            bin <auto[1],auto[4]>                         102          1          -    Covered              
+            bin <auto[0],auto[4]>                         109          1          -    Covered              
+            bin <auto[1],auto[3]>                         111          1          -    Covered              
+            bin <auto[0],auto[3]>                         113          1          -    Covered              
+            bin <auto[1],auto[2]>                         123          1          -    Covered              
+            bin <auto[0],auto[2]>                         103          1          -    Covered              
+            bin <auto[1],auto[1]>                         148          1          -    Covered              
+            bin <auto[0],auto[1]>                         141          1          -    Covered              
+            bin <auto[1],auto[0]>                          60          1          -    Covered              
+            bin <auto[0],auto[0]>                          52          1          -    Covered              
+    Cross sel_valid_crp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                         279          1          -    Covered              
+            bin <auto[0],auto[1]>                         336          1          -    Covered              
+            bin <auto[1],auto[0]>                        1559          1          -    Covered              
+            bin <auto[0],auto[0]>                        1576          1          -    Covered              
+    Cross sel_PSLVERR_crp                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                          69          1          -    Covered              
+            bin <auto[0],auto[1]>                          84          1          -    Covered              
+            bin <auto[1],auto[0]>                        1769          1          -    Covered              
+            bin <auto[0],auto[0]>                        1828          1          -    Covered              
+    Cross sel_addr_crp                                 99.60%        100          -    Uncovered            
+        covered/total bins:                               255        256          -                      
+        missing/total bins:                                 1        256          -                      
+        % Hit:                                         99.60%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],valid_addr[127]>                  20          1          -    Covered              
+            bin <auto[0],valid_addr[127]>                  17          1          -    Covered              
+            bin <auto[1],valid_addr[126]>                  17          1          -    Covered              
+            bin <auto[0],valid_addr[126]>                  19          1          -    Covered              
+            bin <auto[1],valid_addr[125]>                  21          1          -    Covered              
+            bin <auto[0],valid_addr[125]>                  11          1          -    Covered              
+            bin <auto[1],valid_addr[124]>                  15          1          -    Covered              
+            bin <auto[0],valid_addr[124]>                  19          1          -    Covered              
+            bin <auto[1],valid_addr[123]>                  16          1          -    Covered              
+            bin <auto[0],valid_addr[123]>                  20          1          -    Covered              
+            bin <auto[1],valid_addr[122]>                  18          1          -    Covered              
+            bin <auto[0],valid_addr[122]>                  17          1          -    Covered              
+            bin <auto[1],valid_addr[121]>                   7          1          -    Covered              
+            bin <auto[0],valid_addr[121]>                  17          1          -    Covered              
+            bin <auto[1],valid_addr[120]>                  12          1          -    Covered              
+            bin <auto[0],valid_addr[120]>                  16          1          -    Covered              
+            bin <auto[1],valid_addr[119]>                  13          1          -    Covered              
+            bin <auto[0],valid_addr[119]>                  20          1          -    Covered              
+            bin <auto[1],valid_addr[118]>                   8          1          -    Covered              
+            bin <auto[0],valid_addr[118]>                   9          1          -    Covered              
+            bin <auto[1],valid_addr[117]>                  14          1          -    Covered              
+            bin <auto[0],valid_addr[117]>                  21          1          -    Covered              
+            bin <auto[1],valid_addr[116]>                  14          1          -    Covered              
+            bin <auto[0],valid_addr[116]>                  12          1          -    Covered              
+            bin <auto[1],valid_addr[115]>                  21          1          -    Covered              
+            bin <auto[0],valid_addr[115]>                  23          1          -    Covered              
+            bin <auto[1],valid_addr[114]>                   6          1          -    Covered              
+            bin <auto[0],valid_addr[114]>                  10          1          -    Covered              
+            bin <auto[1],valid_addr[113]>                  19          1          -    Covered              
+            bin <auto[0],valid_addr[113]>                  14          1          -    Covered              
+            bin <auto[1],valid_addr[112]>                  18          1          -    Covered              
+            bin <auto[0],valid_addr[112]>                  23          1          -    Covered              
+            bin <auto[1],valid_addr[111]>                   9          1          -    Covered              
+            bin <auto[0],valid_addr[111]>                  21          1          -    Covered              
+            bin <auto[1],valid_addr[110]>                  16          1          -    Covered              
+            bin <auto[0],valid_addr[110]>                  13          1          -    Covered              
+            bin <auto[1],valid_addr[109]>                   6          1          -    Covered              
+            bin <auto[0],valid_addr[109]>                   8          1          -    Covered              
+            bin <auto[1],valid_addr[108]>                   7          1          -    Covered              
+            bin <auto[0],valid_addr[108]>                  18          1          -    Covered              
+            bin <auto[1],valid_addr[107]>                  10          1          -    Covered              
+            bin <auto[0],valid_addr[107]>                  15          1          -    Covered              
+            bin <auto[1],valid_addr[106]>                   2          1          -    Covered              
+            bin <auto[0],valid_addr[106]>                   6          1          -    Covered              
+            bin <auto[1],valid_addr[105]>                  14          1          -    Covered              
+            bin <auto[0],valid_addr[105]>                   8          1          -    Covered              
+            bin <auto[1],valid_addr[104]>                  16          1          -    Covered              
+            bin <auto[0],valid_addr[104]>                   4          1          -    Covered              
+            bin <auto[1],valid_addr[103]>                  13          1          -    Covered              
+            bin <auto[0],valid_addr[103]>                   5          1          -    Covered              
+            bin <auto[1],valid_addr[102]>                  17          1          -    Covered              
+            bin <auto[0],valid_addr[102]>                  21          1          -    Covered              
+            bin <auto[1],valid_addr[101]>                   5          1          -    Covered              
+            bin <auto[0],valid_addr[101]>                  13          1          -    Covered              
+            bin <auto[1],valid_addr[100]>                  13          1          -    Covered              
+            bin <auto[0],valid_addr[100]>                  16          1          -    Covered              
+            bin <auto[1],valid_addr[99]>                    9          1          -    Covered              
+            bin <auto[0],valid_addr[99]>                   23          1          -    Covered              
+            bin <auto[1],valid_addr[98]>                    6          1          -    Covered              
+            bin <auto[0],valid_addr[98]>                   13          1          -    Covered              
+            bin <auto[1],valid_addr[97]>                   15          1          -    Covered              
+            bin <auto[0],valid_addr[97]>                    3          1          -    Covered              
+            bin <auto[1],valid_addr[96]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[96]>                   21          1          -    Covered              
+            bin <auto[1],valid_addr[95]>                   20          1          -    Covered              
+            bin <auto[0],valid_addr[95]>                   23          1          -    Covered              
+            bin <auto[1],valid_addr[94]>                    3          1          -    Covered              
+            bin <auto[0],valid_addr[94]>                   16          1          -    Covered              
+            bin <auto[1],valid_addr[93]>                   15          1          -    Covered              
+            bin <auto[0],valid_addr[93]>                   21          1          -    Covered              
+            bin <auto[1],valid_addr[92]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[92]>                   15          1          -    Covered              
+            bin <auto[1],valid_addr[91]>                    9          1          -    Covered              
+            bin <auto[0],valid_addr[91]>                   12          1          -    Covered              
+            bin <auto[1],valid_addr[90]>                    6          1          -    Covered              
+            bin <auto[0],valid_addr[90]>                   15          1          -    Covered              
+            bin <auto[1],valid_addr[89]>                    7          1          -    Covered              
+            bin <auto[0],valid_addr[89]>                   18          1          -    Covered              
+            bin <auto[1],valid_addr[88]>                    8          1          -    Covered              
+            bin <auto[0],valid_addr[88]>                   10          1          -    Covered              
+            bin <auto[1],valid_addr[87]>                    4          1          -    Covered              
+            bin <auto[0],valid_addr[87]>                    9          1          -    Covered              
+            bin <auto[1],valid_addr[86]>                   16          1          -    Covered              
+            bin <auto[0],valid_addr[86]>                   12          1          -    Covered              
+            bin <auto[1],valid_addr[85]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[85]>                   12          1          -    Covered              
+            bin <auto[1],valid_addr[84]>                   16          1          -    Covered              
+            bin <auto[0],valid_addr[84]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[83]>                   16          1          -    Covered              
+            bin <auto[0],valid_addr[83]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[82]>                   18          1          -    Covered              
+            bin <auto[0],valid_addr[82]>                    8          1          -    Covered              
+            bin <auto[1],valid_addr[81]>                   22          1          -    Covered              
+            bin <auto[0],valid_addr[81]>                   18          1          -    Covered              
+            bin <auto[1],valid_addr[80]>                   16          1          -    Covered              
+            bin <auto[0],valid_addr[80]>                    9          1          -    Covered              
+            bin <auto[1],valid_addr[79]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[79]>                   26          1          -    Covered              
+            bin <auto[1],valid_addr[78]>                   20          1          -    Covered              
+            bin <auto[0],valid_addr[78]>                   22          1          -    Covered              
+            bin <auto[1],valid_addr[77]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[77]>                   10          1          -    Covered              
+            bin <auto[1],valid_addr[76]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[76]>                   18          1          -    Covered              
+            bin <auto[1],valid_addr[75]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[75]>                   15          1          -    Covered              
+            bin <auto[1],valid_addr[74]>                    7          1          -    Covered              
+            bin <auto[0],valid_addr[74]>                   12          1          -    Covered              
+            bin <auto[1],valid_addr[73]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[73]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[72]>                   22          1          -    Covered              
+            bin <auto[0],valid_addr[72]>                   28          1          -    Covered              
+            bin <auto[1],valid_addr[71]>                    8          1          -    Covered              
+            bin <auto[0],valid_addr[71]>                   10          1          -    Covered              
+            bin <auto[1],valid_addr[70]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[70]>                    2          1          -    Covered              
+            bin <auto[1],valid_addr[69]>                   11          1          -    Covered              
+            bin <auto[0],valid_addr[69]>                   10          1          -    Covered              
+            bin <auto[1],valid_addr[68]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[68]>                    6          1          -    Covered              
+            bin <auto[1],valid_addr[67]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[67]>                    6          1          -    Covered              
+            bin <auto[1],valid_addr[66]>                    8          1          -    Covered              
+            bin <auto[0],valid_addr[66]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[65]>                   19          1          -    Covered              
+            bin <auto[0],valid_addr[65]>                    8          1          -    Covered              
+            bin <auto[1],valid_addr[64]>                   15          1          -    Covered              
+            bin <auto[0],valid_addr[64]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[63]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[63]>                   16          1          -    Covered              
+            bin <auto[1],valid_addr[62]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[62]>                   17          1          -    Covered              
+            bin <auto[1],valid_addr[61]>                    2          1          -    Covered              
+            bin <auto[0],valid_addr[61]>                    9          1          -    Covered              
+            bin <auto[1],valid_addr[60]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[60]>                    3          1          -    Covered              
+            bin <auto[1],valid_addr[59]>                   17          1          -    Covered              
+            bin <auto[0],valid_addr[59]>                   28          1          -    Covered              
+            bin <auto[1],valid_addr[58]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[58]>                   31          1          -    Covered              
+            bin <auto[1],valid_addr[57]>                   11          1          -    Covered              
+            bin <auto[0],valid_addr[57]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[56]>                   11          1          -    Covered              
+            bin <auto[0],valid_addr[56]>                   21          1          -    Covered              
+            bin <auto[1],valid_addr[55]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[55]>                   21          1          -    Covered              
+            bin <auto[1],valid_addr[54]>                   16          1          -    Covered              
+            bin <auto[0],valid_addr[54]>                   19          1          -    Covered              
+            bin <auto[1],valid_addr[53]>                   17          1          -    Covered              
+            bin <auto[0],valid_addr[53]>                   20          1          -    Covered              
+            bin <auto[1],valid_addr[52]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[52]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[51]>                   19          1          -    Covered              
+            bin <auto[0],valid_addr[51]>                    5          1          -    Covered              
+            bin <auto[1],valid_addr[50]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[50]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[49]>                   21          1          -    Covered              
+            bin <auto[0],valid_addr[49]>                    9          1          -    Covered              
+            bin <auto[1],valid_addr[48]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[48]>                   16          1          -    Covered              
+            bin <auto[1],valid_addr[47]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[47]>                    9          1          -    Covered              
+            bin <auto[1],valid_addr[46]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[46]>                   12          1          -    Covered              
+            bin <auto[1],valid_addr[45]>                   18          1          -    Covered              
+            bin <auto[0],valid_addr[45]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[44]>                    8          1          -    Covered              
+            bin <auto[0],valid_addr[44]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[43]>                   15          1          -    Covered              
+            bin <auto[0],valid_addr[43]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[42]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[42]>                   21          1          -    Covered              
+            bin <auto[1],valid_addr[41]>                   28          1          -    Covered              
+            bin <auto[0],valid_addr[41]>                   13          1          -    Covered              
+            bin <auto[1],valid_addr[40]>                    7          1          -    Covered              
+            bin <auto[0],valid_addr[40]>                   18          1          -    Covered              
+            bin <auto[1],valid_addr[39]>                   11          1          -    Covered              
+            bin <auto[0],valid_addr[39]>                    5          1          -    Covered              
+            bin <auto[1],valid_addr[38]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[38]>                   17          1          -    Covered              
+            bin <auto[1],valid_addr[37]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[37]>                   22          1          -    Covered              
+            bin <auto[1],valid_addr[36]>                   17          1          -    Covered              
+            bin <auto[0],valid_addr[36]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[35]>                   18          1          -    Covered              
+            bin <auto[0],valid_addr[35]>                    8          1          -    Covered              
+            bin <auto[0],valid_addr[34]>                    8          1          -    Covered              
+            bin <auto[1],valid_addr[33]>                    5          1          -    Covered              
+            bin <auto[0],valid_addr[33]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[32]>                   12          1          -    Covered              
+            bin <auto[0],valid_addr[32]>                   15          1          -    Covered              
+            bin <auto[1],valid_addr[31]>                    9          1          -    Covered              
+            bin <auto[0],valid_addr[31]>                    6          1          -    Covered              
+            bin <auto[1],valid_addr[30]>                   35          1          -    Covered              
+            bin <auto[0],valid_addr[30]>                   16          1          -    Covered              
+            bin <auto[1],valid_addr[29]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[29]>                    6          1          -    Covered              
+            bin <auto[1],valid_addr[28]>                   18          1          -    Covered              
+            bin <auto[0],valid_addr[28]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[27]>                   14          1          -    Covered              
+            bin <auto[0],valid_addr[27]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[26]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[26]>                    8          1          -    Covered              
+            bin <auto[1],valid_addr[25]>                   22          1          -    Covered              
+            bin <auto[0],valid_addr[25]>                   16          1          -    Covered              
+            bin <auto[1],valid_addr[24]>                   23          1          -    Covered              
+            bin <auto[0],valid_addr[24]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[23]>                   12          1          -    Covered              
+            bin <auto[0],valid_addr[23]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[22]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[22]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[21]>                   11          1          -    Covered              
+            bin <auto[0],valid_addr[21]>                   19          1          -    Covered              
+            bin <auto[1],valid_addr[20]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[20]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[19]>                   24          1          -    Covered              
+            bin <auto[0],valid_addr[19]>                   17          1          -    Covered              
+            bin <auto[1],valid_addr[18]>                   22          1          -    Covered              
+            bin <auto[0],valid_addr[18]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[17]>                    6          1          -    Covered              
+            bin <auto[0],valid_addr[17]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[16]>                   13          1          -    Covered              
+            bin <auto[0],valid_addr[16]>                   14          1          -    Covered              
+            bin <auto[1],valid_addr[15]>                    7          1          -    Covered              
+            bin <auto[0],valid_addr[15]>                    7          1          -    Covered              
+            bin <auto[1],valid_addr[14]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[14]>                    5          1          -    Covered              
+            bin <auto[1],valid_addr[13]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[13]>                   10          1          -    Covered              
+            bin <auto[1],valid_addr[12]>                   10          1          -    Covered              
+            bin <auto[0],valid_addr[12]>                    8          1          -    Covered              
+            bin <auto[1],valid_addr[11]>                    3          1          -    Covered              
+            bin <auto[0],valid_addr[11]>                   11          1          -    Covered              
+            bin <auto[1],valid_addr[10]>                   24          1          -    Covered              
+            bin <auto[0],valid_addr[10]>                   23          1          -    Covered              
+            bin <auto[1],valid_addr[9]>                    10          1          -    Covered              
+            bin <auto[0],valid_addr[9]>                    14          1          -    Covered              
+            bin <auto[1],valid_addr[8]>                    19          1          -    Covered              
+            bin <auto[0],valid_addr[8]>                     8          1          -    Covered              
+            bin <auto[1],valid_addr[7]>                    13          1          -    Covered              
+            bin <auto[0],valid_addr[7]>                    12          1          -    Covered              
+            bin <auto[1],valid_addr[6]>                    17          1          -    Covered              
+            bin <auto[0],valid_addr[6]>                     5          1          -    Covered              
+            bin <auto[1],valid_addr[5]>                    13          1          -    Covered              
+            bin <auto[0],valid_addr[5]>                    11          1          -    Covered              
+            bin <auto[1],valid_addr[4]>                    14          1          -    Covered              
+            bin <auto[0],valid_addr[4]>                    14          1          -    Covered              
+            bin <auto[1],valid_addr[3]>                     9          1          -    Covered              
+            bin <auto[0],valid_addr[3]>                    11          1          -    Covered              
+            bin <auto[1],valid_addr[2]>                    15          1          -    Covered              
+            bin <auto[0],valid_addr[2]>                    17          1          -    Covered              
+            bin <auto[1],valid_addr[1]>                    13          1          -    Covered              
+            bin <auto[0],valid_addr[1]>                     8          1          -    Covered              
+            bin <auto[1],valid_addr[0]>                    17          1          -    Covered              
+            bin <auto[0],valid_addr[0]>                     8          1          -    Covered              
+            bin <auto[1],valid_addr[34]>                    0          1          1    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 99.97%  COVERGROUP TYPES: 1
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/APB_sequences_pkg/APB_write_sequence/body/#ublk#4690743#38/immed__40
+                     D:/APB UVM/APB_sequences.sv(40)
+                                                        0          1
+/APB_sequences_pkg/APB_read_sequence/body/#ublk#4690743#57/immed__59
+                     D:/APB UVM/APB_sequences.sv(59)
+                                                        0          1
+/APB_sequences_pkg/APB_read_write_sequence/body/#ublk#4690743#76/immed__78
+                     D:/APB UVM/APB_sequences.sv(78)
+                                                        0          1
+
+Total Coverage By Instance (filtered view): 99.98%
+
