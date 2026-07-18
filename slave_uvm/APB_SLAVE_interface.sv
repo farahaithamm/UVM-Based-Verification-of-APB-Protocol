@@ -9,9 +9,14 @@ interface intf(input logic PCLK);
     logic [31:0] PRDATA;
     logic PSLVERR;
 
-    clocking cb @(posedge PCLK);
+    clocking drv_cb @(posedge PCLK);
         // default input #1step output #1step;
         output PRESETn, PADDR, PSEL, PENABLE, PWRITE, PWDATA, PSTRB;
+    endclocking
+
+    clocking mon_cb @(posedge PCLK);
+        // default input #1step output #1step;
+        input PRESETn, PADDR, PSEL, PENABLE, PWRITE, PWDATA, PSTRB;
         input PREADY, PRDATA, PSLVERR;
     endclocking
 

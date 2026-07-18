@@ -20,7 +20,7 @@ class APB_driver extends uvm_driver #(APB_seq_item);
             `uvm_fatal(get_full_name(), "Driver - Unable to get the virtual interface")
     
         
-        seq_item = APB_seq_item::type_id::create("APB_seq_item");
+        seq_item = APB_seq_item::type_id::create("seq_item");
 
     endfunction
 
@@ -28,15 +28,15 @@ class APB_driver extends uvm_driver #(APB_seq_item);
         super.run_phase(phase);
         forever begin
             seq_item_port.get_next_item(seq_item);
-            vif.PRESETn <= seq_item.PRESETn;
-            vif.addr <= seq_item.addr;
-            vif.sel <= seq_item.sel;
-            vif.transfer <= seq_item.transfer;
-            vif.wr_en <= seq_item.wr_en;
-            vif.wdata <= seq_item.wdata;
-            vif.strb <= seq_item.strb;
-            repeat(2) @(vif.cb);
-            if(seq_item.continue_transfer) @(vif.cb);
+            vif.drv_cb.PRESETn <= seq_item.PRESETn;
+            vif.drv_cb.addr <= seq_item.addr;
+            vif.drv_cb.sel <= seq_item.sel;
+            vif.drv_cb.transfer <= seq_item.transfer;
+            vif.drv_cb.wr_en <= seq_item.wr_en;
+            vif.drv_cb.wdata <= seq_item.wdata;
+            vif.drv_cb.strb <= seq_item.strb;
+            repeat(2) @(vif.drv_cb);
+            if(seq_item.continue_transfer) @(vif.drv_cb);
             seq_item_port.item_done();
         end
     endtask

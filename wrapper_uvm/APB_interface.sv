@@ -11,9 +11,14 @@ interface intf(input logic PCLK);
     logic valid_out;
     logic PSLVERR;
 
-    clocking cb @(posedge PCLK);
+    clocking drv_cb @(posedge PCLK);
         // default input #1step output #1step;
         output PRESETn, addr, sel, transfer, wr_en, wdata, strb;
+    endclocking
+
+    clocking mon_cb @(posedge PCLK);
+        // default input #1step output #1step;
+        input PRESETn, addr, sel, transfer, wr_en, wdata, strb;
         input OUTDATA, valid_out, PSLVERR;
     endclocking
 

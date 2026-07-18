@@ -56,19 +56,11 @@ class APB_scoreboard extends uvm_scoreboard;
             else if(cs_before == ACCESS && t.transfer) cs = SETUP;
             else cs = IDLE;
             
-            if(!slverr_expected && cs == ACCESS) begin
+            if(!slverr_expected && cs_before == ACCESS) begin
                 if (t.wr_en) begin
                     for (int i = 0; i < PSTRB_WIDTH; i++) mask[(i*8) +: 8] = {8{t.strb[i]}};
                     if (t.sel == 0) ref_mem0[t.addr] = (ref_mem0[t.addr] & ~mask) | (mask & t.wdata);
                     else ref_mem1[t.addr] = (ref_mem1[t.addr] & ~mask) | (mask & t.wdata);
-                    // `uvm_info("SCB",
-                    // $sformatf("WRITE addr=%0h sel=%0d strb=%b wdata=%h new=%h",
-                    // t.addr,
-                    // t.sel,
-                    // t.strb,
-                    // t.wdata,
-                    // (t.sel)?ref_mem1[t.addr]:ref_mem0[t.addr]),
-                    // UVM_HIGH)
                 end
                 else begin
                     expected_rdata = (t.sel == 0) ? ref_mem0[t.addr] : ref_mem1[t.addr];
@@ -78,52 +70,32 @@ class APB_scoreboard extends uvm_scoreboard;
                             t.addr, t.sel))
                         mismatch_cnt++;
                     end
-                    else begin
-                        // `uvm_info("SCB", "true valid out, t 1", UVM_HIGH)
-                        match_cnt++;
-                    end
+                    else match_cnt++;
                     if (t.OUTDATA !== expected_rdata) begin
                         `uvm_error("SCB", $sformatf(
                             "MISMATCH @addr=%0h sel=%0d: expected=%h actual=%h",
                             t.addr, t.sel, expected_rdata, t.OUTDATA))
                         mismatch_cnt++;
                     end
-                    else begin
-                        // `uvm_info("SCB", "true data out t 1", UVM_HIGH)
-                        match_cnt++;
-                    end
+                    else match_cnt++;
+                    
                 end
             end
-            else if(slverr_expected && cs == ACCESS) begin
+            else if(slverr_expected && cs_before == ACCESS) begin
                 if(!t.PSLVERR) begin
                     `uvm_error("SCB", $sformatf(
                             "Expected PSLVERR=1 for read @addr=%0h sel=%0d, got 0",
                             t.addr, t.sel))
                         mismatch_cnt++;
                 end
-                else begin
-                    // `uvm_info("SCB", $sformatf(
-                    //         "PSLVERR=1 for read @addr=%0h sel=%0d",
-                    //         t.addr, t.sel), UVM_HIGH)
-                    match_cnt++;
-                end
+                else match_cnt++;
                 if (t.valid_out) begin
                     `uvm_error("SCB", $sformatf(
                         "Expected valid_out=0 (PSLVERR case) @addr=%0h sel=%0d, got 1",
                         t.addr, t.sel))
                     mismatch_cnt++;
                 end
-                else begin
-                    // `uvm_info("SCB", "true valid out, t 0", UVM_HIGH)
-                    // `uvm_info("SCB",
-                    // $sformatf("else  addr=%0h sel=%0d strb=%b wdata=%h",
-                    // t.addr,
-                    // t.sel,
-                    // t.strb,
-                    // t.wdata),
-                    // UVM_HIGH)
-                    match_cnt++;
-                end
+                else match_cnt++;
             end
             else begin
                 if (t.valid_out) begin
@@ -132,28 +104,14 @@ class APB_scoreboard extends uvm_scoreboard;
                         t.addr, t.sel))
                     mismatch_cnt++;
                 end
-                else begin
-                    // `uvm_info("SCB", "true valid out, t 0", UVM_HIGH)
-                    // `uvm_info("SCB",
-                    // $sformatf("else  addr=%0h sel=%0d strb=%b wdata=%h",
-                    // t.addr,
-                    // t.sel,
-                    // t.strb,
-                    // t.wdata),
-                    // UVM_HIGH)
-                    match_cnt++;
-                end
+                else match_cnt++;
                 if(t.PSLVERR) begin
                     `uvm_error("SCB", $sformatf(
                             "Expected PSLVERR=0 for read @addr=%0h sel=%0d, got 1",
                             t.addr, t.sel))
                         mismatch_cnt++;
                 end
-                else begin
-                    // `uvm_info("SCB", $sformatf(
-                    //         "PSLVERR=0 for read @addr=%0h sel=%0d",
-                    //         t.addr, t.sel), UVM_HIGH)
-                end match_cnt++;
+                else match_cnt++;
             end
         end
     endfunction

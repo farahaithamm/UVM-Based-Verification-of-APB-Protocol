@@ -20,7 +20,7 @@ class APB_SLAVE_driver extends uvm_driver #(APB_SLAVE_seq_item);
             `uvm_fatal(get_full_name(), "Driver - Unable to get the virtual interface")
     
         
-        seq_item = APB_SLAVE_seq_item::type_id::create("APB_seq_item");
+        seq_item = APB_SLAVE_seq_item::type_id::create("seq_item");
 
     endfunction
 
@@ -28,19 +28,19 @@ class APB_SLAVE_driver extends uvm_driver #(APB_SLAVE_seq_item);
         super.run_phase(phase);
         forever begin
             seq_item_port.get_next_item(seq_item);
-            vif.PRESETn <= seq_item.PRESETn;
-            vif.PADDR <= seq_item.PADDR;
-            vif.PSEL <= 1'b1;
-            vif.PENABLE <= 1'b0;
-            vif.PWRITE <= seq_item.PWRITE;
-            vif.PWDATA <= seq_item.PWDATA;
-            vif.PSTRB <= seq_item.PSTRB;
-            @(vif.cb);
-            vif.PENABLE <= 1'b1;
-            @(vif.cb);
-            vif.PSEL <= 1'b0;
-            vif.PENABLE <= 1'b0;
-            @(vif.cb);
+            vif.drv_cb.PRESETn <= seq_item.PRESETn;
+            vif.drv_cb.PADDR <= seq_item.PADDR;
+            vif.drv_cb.PSEL <= 1'b1;
+            vif.drv_cb.PENABLE <= 1'b0;
+            vif.drv_cb.PWRITE <= seq_item.PWRITE;
+            vif.drv_cb.PWDATA <= seq_item.PWDATA;
+            vif.drv_cb.PSTRB <= seq_item.PSTRB;
+            @(vif.drv_cb);
+            vif.drv_cb.PENABLE <= 1'b1;
+            @(vif.drv_cb);
+            vif.drv_cb.PSEL <= 1'b0;
+            vif.drv_cb.PENABLE <= 1'b0;
+            @(vif.drv_cb);
             seq_item_port.item_done();
         end
     endtask

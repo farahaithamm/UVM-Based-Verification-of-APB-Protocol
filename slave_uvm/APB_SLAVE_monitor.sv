@@ -28,17 +28,17 @@ class APB_SLAVE_monitor extends uvm_monitor;
         super.run_phase(phase);
         forever begin
             seq_item = APB_SLAVE_seq_item::type_id::create("seq_item", this);
-            @(vif.cb);
-            seq_item.PRESETn <= vif.PRESETn;
-            seq_item.PADDR <= vif.PADDR;
-            seq_item.PSEL <= vif.PSEL;
-            seq_item.PENABLE <= vif.PENABLE;
-            seq_item.PWRITE <= vif.PWRITE;
-            seq_item.PWDATA <= vif.PWDATA;
-            seq_item.PSTRB <= vif.PSTRB;
-            seq_item.PREADY <= vif.PREADY;
-            seq_item.PRDATA <= vif.PRDATA;
-            seq_item.PSLVERR <= vif.PSLVERR;
+            @(vif.mon_cb);
+            seq_item.PRESETn <= vif.mon_cb.PRESETn;
+            seq_item.PADDR <= vif.mon_cb.PADDR;
+            seq_item.PSEL <= vif.mon_cb.PSEL;
+            seq_item.PENABLE <= vif.mon_cb.PENABLE;
+            seq_item.PWRITE <= vif.mon_cb.PWRITE;
+            seq_item.PWDATA <= vif.mon_cb.PWDATA;
+            seq_item.PSTRB <= vif.mon_cb.PSTRB;
+            seq_item.PREADY <= vif.mon_cb.PREADY;
+            seq_item.PRDATA <= vif.mon_cb.PRDATA;
+            seq_item.PSLVERR <= vif.mon_cb.PSLVERR;
             #1step ap.write(seq_item);
         end
     endtask
