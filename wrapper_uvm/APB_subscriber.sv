@@ -16,7 +16,7 @@ class APB_subscriber extends uvm_subscriber #(APB_seq_item);
         }
         addr_cp : coverpoint seq_item.addr{
             bins valid_addr[] = {[0:127]};
-            // illegal_bins invalid_addr = default;
+            bins invalid_addr = {[128:$]};
         }
         sel_cp : coverpoint seq_item.sel;
         transfer_cp : coverpoint seq_item.transfer;
@@ -31,6 +31,11 @@ class APB_subscriber extends uvm_subscriber #(APB_seq_item);
         sel_valid_crp: cross sel_cp, valid_out_cp;
         sel_PSLVERR_crp: cross sel_cp, PSLVERR_cp;
         sel_addr_crp: cross sel_cp, addr_cp;
+        addr_err_crp : cross addr_cp, PSLVERR_cp{
+            option.cross_auto_bin_max = 0;
+            bins valid_no_error = binsof(addr_cp.valid_addr) && binsof(PSLVERR_cp) intersect {0};
+            bins invalid_err = binsof(addr_cp.invalid_addr) && binsof(PSLVERR_cp) intersect {1};   
+        }
     endgroup 
 
     function new(string name = "APB_subscriber", uvm_component parent = null);

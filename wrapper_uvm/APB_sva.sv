@@ -166,5 +166,23 @@ module APB_WRAPPER_SVA #(
     endproperty
     a_valid_out_no_error: assert property(p_valid_out_no_error);
     c_valid_out_no_error: cover property(p_valid_out_no_error);
+
+    property p_enable_access;
+        @(posedge PCLK) disable iff(!PRESETn) PENABLE |-> (cs==ACCESS);
+    endproperty
+    a_enable_access: assert property(p_enable_access);
+    c_enable_access: cover property(p_enable_access);
+
     
+    property p_enable_idle;
+        @(posedge PCLK) disable iff(!PRESETn) (cs==IDLE) |-> !PENABLE;
+    endproperty
+    a_enable_idle: assert property(p_enable_idle);
+    c_enable_idle: cover property(p_enable_idle);
+
+    property p_prdata_outdata;
+        @(posedge PCLK) disable iff(!PRESETn) valid_out |-> (OUTDATA==PRDATA);
+    endproperty
+    a_prdata_outdata: assert property(p_prdata_outdata);
+    c_prdata_outdata: cover property(p_prdata_outdata);
 endmodule

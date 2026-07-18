@@ -6,7 +6,7 @@ Coverage Report by instance with details
 =================================================================================
 
 Assertion Coverage:
-    Assertions                      22        22         0   100.00%
+    Assertions                      25        25         0   100.00%
 --------------------------------------------------------------------
 Name                 File(Line)                   Failure      Pass 
                                                   Count        Count
@@ -66,9 +66,18 @@ Name                 File(Line)                   Failure      Pass
 /APB_top/dut/apb_wrapper_sva_inst/a_valid_out_no_error
                      D:/APB UVM/APB_sva.sv(167)
                                                         0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_enable_access
+                     D:/APB UVM/APB_sva.sv(173)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_enable_idle
+                     D:/APB UVM/APB_sva.sv(180)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_prdata_outdata
+                     D:/APB UVM/APB_sva.sv(186)
+                                                        0          1
 
 Directive Coverage:
-    Directives                      21        21         0   100.00%
+    Directives                      24        24         0   100.00%
 
 DIRECTIVE COVERAGE:
 --------------------------------------------------------------------------------------------
@@ -138,6 +147,15 @@ Name                                     Design Design   Lang File(Line)      Hi
 /APB_top/dut/apb_wrapper_sva_inst/c_valid_out_no_error 
                                          APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(168)
                                                                               3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_enable_access 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(174)
+                                                                              1445 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_enable_idle 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(181)
+                                                                               771 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_prdata_outdata 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(187)
+                                                                               615 Covered   
 
 =================================================================================
 === Instance: /APB_sequences_pkg
@@ -167,23 +185,23 @@ Name                 File(Line)                   Failure      Pass
 
 Covergroup Coverage:
     Covergroups                      1        na        na    99.97%
-        Coverpoints/Crosses         14        na        na        na
-            Covergroup Bins        462       461         1    99.78%
+        Coverpoints/Crosses         15        na        na        na
+            Covergroup Bins        467       466         1    99.78%
 ----------------------------------------------------------------------------------------------------------
 Covergroup                                             Metric       Goal       Bins    Status               
                                                                                                          
 ----------------------------------------------------------------------------------------------------------
  TYPE /APB_subscriber_pkg/APB_subscriber/cg            99.97%        100          -    Uncovered            
-    covered/total bins:                                   461        462          -                      
-    missing/total bins:                                     1        462          -                      
+    covered/total bins:                                   466        467          -                      
+    missing/total bins:                                     1        467          -                      
     % Hit:                                             99.78%        100          -                      
     Coverpoint PRESETn_cp                             100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
     Coverpoint addr_cp                                100.00%        100          -    Covered              
-        covered/total bins:                               128        128          -                      
-        missing/total bins:                                 0        128          -                      
+        covered/total bins:                               129        129          -                      
+        missing/total bins:                                 0        129          -                      
         % Hit:                                        100.00%        100          -                      
     Coverpoint sel_cp                                 100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
@@ -229,14 +247,18 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
-    Cross sel_addr_crp                                 99.60%        100          -    Uncovered            
-        covered/total bins:                               255        256          -                      
-        missing/total bins:                                 1        256          -                      
-        % Hit:                                         99.60%        100          -                      
+    Cross sel_addr_crp                                 99.61%        100          -    Uncovered            
+        covered/total bins:                               257        258          -                      
+        missing/total bins:                                 1        258          -                      
+        % Hit:                                         99.61%        100          -                      
+    Cross addr_err_crp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
  Covergroup instance \/APB_subscriber_pkg::APB_subscriber::cg  
                                                        99.97%        100          -    Uncovered            
-    covered/total bins:                                   461        462          -                      
-    missing/total bins:                                     1        462          -                      
+    covered/total bins:                                   466        467          -                      
+    missing/total bins:                                     1        467          -                      
     % Hit:                                             99.78%        100          -                      
     Coverpoint PRESETn_cp                             100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
@@ -247,8 +269,8 @@ Covergroup                                             Metric       Goal       B
         bin rst_on_to_off                                  34          1          -    Covered              
         bin rst_off_to_on                                  33          1          -    Covered              
     Coverpoint addr_cp                                100.00%        100          -    Covered              
-        covered/total bins:                               128        128          -                      
-        missing/total bins:                                 0        128          -                      
+        covered/total bins:                               129        129          -                      
+        missing/total bins:                                 0        129          -                      
         % Hit:                                        100.00%        100          -                      
         bin valid_addr[0]                                  26          1          -    Covered              
         bin valid_addr[1]                                  21          1          -    Covered              
@@ -378,6 +400,7 @@ Covergroup                                             Metric       Goal       B
         bin valid_addr[125]                                32          1          -    Covered              
         bin valid_addr[126]                                36          1          -    Covered              
         bin valid_addr[127]                                37          1          -    Covered              
+        bin invalid_addr                                  395          1          -    Covered              
     Coverpoint sel_cp                                 100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
@@ -501,11 +524,13 @@ Covergroup                                             Metric       Goal       B
             bin <auto[0],auto[1]>                          84          1          -    Covered              
             bin <auto[1],auto[0]>                        1769          1          -    Covered              
             bin <auto[0],auto[0]>                        1829          1          -    Covered              
-    Cross sel_addr_crp                                 99.60%        100          -    Uncovered            
-        covered/total bins:                               255        256          -                      
-        missing/total bins:                                 1        256          -                      
-        % Hit:                                         99.60%        100          -                      
+    Cross sel_addr_crp                                 99.61%        100          -    Uncovered            
+        covered/total bins:                               257        258          -                      
+        missing/total bins:                                 1        258          -                      
+        % Hit:                                         99.61%        100          -                      
         Auto, Default and User Defined Bins:
+            bin <auto[1],invalid_addr>                    181          1          -    Covered              
+            bin <auto[0],invalid_addr>                    214          1          -    Covered              
             bin <auto[1],valid_addr[127]>                  20          1          -    Covered              
             bin <auto[0],valid_addr[127]>                  17          1          -    Covered              
             bin <auto[1],valid_addr[126]>                  17          1          -    Covered              
@@ -762,6 +787,13 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],valid_addr[0]>                    17          1          -    Covered              
             bin <auto[0],valid_addr[0]>                     9          1          -    Covered              
             bin <auto[1],valid_addr[34]>                    0          1          1    ZERO                 
+    Cross addr_err_crp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin valid_no_error                           3356          1          -    Covered              
+            bin invalid_err                               153          1          -    Covered              
 
 COVERGROUP COVERAGE:
 ----------------------------------------------------------------------------------------------------------
@@ -769,16 +801,16 @@ Covergroup                                             Metric       Goal       B
                                                                                                          
 ----------------------------------------------------------------------------------------------------------
  TYPE /APB_subscriber_pkg/APB_subscriber/cg            99.97%        100          -    Uncovered            
-    covered/total bins:                                   461        462          -                      
-    missing/total bins:                                     1        462          -                      
+    covered/total bins:                                   466        467          -                      
+    missing/total bins:                                     1        467          -                      
     % Hit:                                             99.78%        100          -                      
     Coverpoint PRESETn_cp                             100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
     Coverpoint addr_cp                                100.00%        100          -    Covered              
-        covered/total bins:                               128        128          -                      
-        missing/total bins:                                 0        128          -                      
+        covered/total bins:                               129        129          -                      
+        missing/total bins:                                 0        129          -                      
         % Hit:                                        100.00%        100          -                      
     Coverpoint sel_cp                                 100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
@@ -824,14 +856,18 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
-    Cross sel_addr_crp                                 99.60%        100          -    Uncovered            
-        covered/total bins:                               255        256          -                      
-        missing/total bins:                                 1        256          -                      
-        % Hit:                                         99.60%        100          -                      
+    Cross sel_addr_crp                                 99.61%        100          -    Uncovered            
+        covered/total bins:                               257        258          -                      
+        missing/total bins:                                 1        258          -                      
+        % Hit:                                         99.61%        100          -                      
+    Cross addr_err_crp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
  Covergroup instance \/APB_subscriber_pkg::APB_subscriber::cg  
                                                        99.97%        100          -    Uncovered            
-    covered/total bins:                                   461        462          -                      
-    missing/total bins:                                     1        462          -                      
+    covered/total bins:                                   466        467          -                      
+    missing/total bins:                                     1        467          -                      
     % Hit:                                             99.78%        100          -                      
     Coverpoint PRESETn_cp                             100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
@@ -842,8 +878,8 @@ Covergroup                                             Metric       Goal       B
         bin rst_on_to_off                                  34          1          -    Covered              
         bin rst_off_to_on                                  33          1          -    Covered              
     Coverpoint addr_cp                                100.00%        100          -    Covered              
-        covered/total bins:                               128        128          -                      
-        missing/total bins:                                 0        128          -                      
+        covered/total bins:                               129        129          -                      
+        missing/total bins:                                 0        129          -                      
         % Hit:                                        100.00%        100          -                      
         bin valid_addr[0]                                  26          1          -    Covered              
         bin valid_addr[1]                                  21          1          -    Covered              
@@ -973,6 +1009,7 @@ Covergroup                                             Metric       Goal       B
         bin valid_addr[125]                                32          1          -    Covered              
         bin valid_addr[126]                                36          1          -    Covered              
         bin valid_addr[127]                                37          1          -    Covered              
+        bin invalid_addr                                  395          1          -    Covered              
     Coverpoint sel_cp                                 100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
@@ -1096,11 +1133,13 @@ Covergroup                                             Metric       Goal       B
             bin <auto[0],auto[1]>                          84          1          -    Covered              
             bin <auto[1],auto[0]>                        1769          1          -    Covered              
             bin <auto[0],auto[0]>                        1829          1          -    Covered              
-    Cross sel_addr_crp                                 99.60%        100          -    Uncovered            
-        covered/total bins:                               255        256          -                      
-        missing/total bins:                                 1        256          -                      
-        % Hit:                                         99.60%        100          -                      
+    Cross sel_addr_crp                                 99.61%        100          -    Uncovered            
+        covered/total bins:                               257        258          -                      
+        missing/total bins:                                 1        258          -                      
+        % Hit:                                         99.61%        100          -                      
         Auto, Default and User Defined Bins:
+            bin <auto[1],invalid_addr>                    181          1          -    Covered              
+            bin <auto[0],invalid_addr>                    214          1          -    Covered              
             bin <auto[1],valid_addr[127]>                  20          1          -    Covered              
             bin <auto[0],valid_addr[127]>                  17          1          -    Covered              
             bin <auto[1],valid_addr[126]>                  17          1          -    Covered              
@@ -1357,6 +1396,13 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],valid_addr[0]>                    17          1          -    Covered              
             bin <auto[0],valid_addr[0]>                     9          1          -    Covered              
             bin <auto[1],valid_addr[34]>                    0          1          1    ZERO                 
+    Cross addr_err_crp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin valid_no_error                           3356          1          -    Covered              
+            bin invalid_err                               153          1          -    Covered              
 
 TOTAL COVERGROUP COVERAGE: 99.97%  COVERGROUP TYPES: 1
 
@@ -1428,8 +1474,17 @@ Name                                     Design Design   Lang File(Line)      Hi
 /APB_top/dut/apb_wrapper_sva_inst/c_valid_out_no_error 
                                          APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(168)
                                                                               3661 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_enable_access 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(174)
+                                                                              1445 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_enable_idle 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(181)
+                                                                               771 Covered   
+/APB_top/dut/apb_wrapper_sva_inst/c_prdata_outdata 
+                                         APB_WRAPPER_SVA Verilog  SVA  D:/APB UVM/APB_sva.sv(187)
+                                                                               615 Covered   
 
-TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 21
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 24
 
 ASSERTION RESULTS:
 --------------------------------------------------------------------
@@ -1490,6 +1545,15 @@ Name                 File(Line)                   Failure      Pass
                                                         0          1
 /APB_top/dut/apb_wrapper_sva_inst/a_valid_out_no_error
                      D:/APB UVM/APB_sva.sv(167)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_enable_access
+                     D:/APB UVM/APB_sva.sv(173)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_enable_idle
+                     D:/APB UVM/APB_sva.sv(180)
+                                                        0          1
+/APB_top/dut/apb_wrapper_sva_inst/a_prdata_outdata
+                     D:/APB UVM/APB_sva.sv(186)
                                                         0          1
 /APB_sequences_pkg/APB_write_sequence/body/#ublk#4690743#38/immed__41
                      D:/APB UVM/APB_sequences.sv(41)
