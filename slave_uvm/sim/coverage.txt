@@ -195,7 +195,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
-        bin rst_on                                        171          1          -    Covered              
+        bin rst_on                                        170          1          -    Covered              
         bin rst_off                                      4331          1          -    Covered              
         bin rst_on_to_off                                  55          1          -    Covered              
         bin rst_off_to_on                                  54          1          -    Covered              
@@ -203,7 +203,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                               129        129          -                      
         missing/total bins:                                 0        129          -                      
         % Hit:                                        100.00%        100          -                      
-        bin valid_addr[0]                                  27          1          -    Covered              
+        bin valid_addr[0]                                  26          1          -    Covered              
         bin valid_addr[1]                                  12          1          -    Covered              
         bin valid_addr[2]                                  21          1          -    Covered              
         bin valid_addr[3]                                  30          1          -    Covered              
@@ -337,18 +337,18 @@ Covergroup                                             Metric       Goal       B
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
         bin auto[0]                                      1500          1          -    Covered              
-        bin auto[1]                                      3002          1          -    Covered              
+        bin auto[1]                                      3001          1          -    Covered              
     Coverpoint en_cp                                  100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      3001          1          -    Covered              
+        bin auto[0]                                      3000          1          -    Covered              
         bin auto[1]                                      1501          1          -    Covered              
     Coverpoint wr_en_cp                               100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      2190          1          -    Covered              
+        bin auto[0]                                      2189          1          -    Covered              
         bin auto[1]                                      2312          1          -    Covered              
     Coverpoint strb_cp                                100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
@@ -369,18 +369,18 @@ Covergroup                                             Metric       Goal       B
         bin wr_strb[13]                                   198          1          -    Covered              
         bin wr_strb[14]                                   143          1          -    Covered              
         bin wr_strb[15]                                   162          1          -    Covered              
-        bin rd_strb                                      2190          1          -    Covered              
+        bin rd_strb                                      2189          1          -    Covered              
     Coverpoint ready_cp                               100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      3001          1          -    Covered              
+        bin auto[0]                                      3000          1          -    Covered              
         bin auto[1]                                      1501          1          -    Covered              
     Coverpoint slverr_cp                              100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      4356          1          -    Covered              
+        bin auto[0]                                      4355          1          -    Covered              
         bin auto[1]                                       146          1          -    Covered              
     Cross wr_addr_crp                                  99.22%        100          -    Uncovered            
         covered/total bins:                               256        258          -                      
@@ -642,7 +642,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],valid_addr[1]>                     3          1          -    Covered              
             bin <auto[0],valid_addr[1]>                     9          1          -    Covered              
             bin <auto[1],valid_addr[0]>                    15          1          -    Covered              
-            bin <auto[0],valid_addr[0]>                    12          1          -    Covered              
+            bin <auto[0],valid_addr[0]>                    11          1          -    Covered              
             bin <auto[0],valid_addr[38]>                    0          1          1    ZERO                 
             bin <auto[0],valid_addr[2]>                     0          1          1    ZERO                 
     Cross sel_en_crp                                  100.00%        100          -    Covered              
@@ -651,7 +651,7 @@ Covergroup                                             Metric       Goal       B
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
             bin <auto[1],auto[1]>                        1501          1          -    Covered              
-            bin <auto[1],auto[0]>                        1501          1          -    Covered              
+            bin <auto[1],auto[0]>                        1500          1          -    Covered              
             bin <auto[0],auto[0]>                        1500          1          -    Covered              
         Illegal and Ignore Bins:
             ignore_bin en_nsel                              0                     -    ZERO                 
@@ -661,7 +661,7 @@ Covergroup                                             Metric       Goal       B
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
             bin wr_strb                                  2312          1          -    Covered              
-            bin rd_strb                                  2190          1          -    Covered              
+            bin rd_strb                                  2189          1          -    Covered              
         Illegal and Ignore Bins:
             illegal_bin invalid_rd                          0                     -    ZERO                 
             illegal_bin invalid_wr                          0                     -    ZERO                 
@@ -670,7 +670,7 @@ Covergroup                                             Metric       Goal       B
         missing/total bins:                                 0        131          -                      
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
-            bin wr_strb                                  2710          1          -    Covered              
+            bin wr_strb                                  2709          1          -    Covered              
             bin <invalid_addr,auto[1]>                    292          1          -    Covered              
             bin <invalid_addr,auto[0]>                    146          1          -    Covered              
             bin <valid_addr[127],auto[0]>                  13          1          -    Covered              
@@ -808,7 +808,7 @@ Covergroup                                             Metric       Goal       B
         Auto, Default and User Defined Bins:
             bin <auto[1],auto[1]>                         146          1          -    Covered              
             bin <auto[1],auto[0]>                        1355          1          -    Covered              
-            bin <auto[0],auto[0]>                        3001          1          -    Covered              
+            bin <auto[0],auto[0]>                        3000          1          -    Covered              
         Illegal and Ignore Bins:
             illegal_bin nready_slverr                       0                     -    ZERO                 
     Cross addr_slverr_crp                             100.00%        100          -    Covered              
@@ -829,7 +829,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                          72          1          -    Covered              
             bin <auto[0],auto[1]>                          74          1          -    Covered              
             bin <auto[1],auto[0]>                        2240          1          -    Covered              
-            bin <auto[0],auto[0]>                        2116          1          -    Covered              
+            bin <auto[0],auto[0]>                        2115          1          -    Covered              
 
 COVERGROUP COVERAGE:
 ----------------------------------------------------------------------------------------------------------
@@ -910,7 +910,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
-        bin rst_on                                        171          1          -    Covered              
+        bin rst_on                                        170          1          -    Covered              
         bin rst_off                                      4331          1          -    Covered              
         bin rst_on_to_off                                  55          1          -    Covered              
         bin rst_off_to_on                                  54          1          -    Covered              
@@ -918,7 +918,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                               129        129          -                      
         missing/total bins:                                 0        129          -                      
         % Hit:                                        100.00%        100          -                      
-        bin valid_addr[0]                                  27          1          -    Covered              
+        bin valid_addr[0]                                  26          1          -    Covered              
         bin valid_addr[1]                                  12          1          -    Covered              
         bin valid_addr[2]                                  21          1          -    Covered              
         bin valid_addr[3]                                  30          1          -    Covered              
@@ -1052,18 +1052,18 @@ Covergroup                                             Metric       Goal       B
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
         bin auto[0]                                      1500          1          -    Covered              
-        bin auto[1]                                      3002          1          -    Covered              
+        bin auto[1]                                      3001          1          -    Covered              
     Coverpoint en_cp                                  100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      3001          1          -    Covered              
+        bin auto[0]                                      3000          1          -    Covered              
         bin auto[1]                                      1501          1          -    Covered              
     Coverpoint wr_en_cp                               100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      2190          1          -    Covered              
+        bin auto[0]                                      2189          1          -    Covered              
         bin auto[1]                                      2312          1          -    Covered              
     Coverpoint strb_cp                                100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
@@ -1084,18 +1084,18 @@ Covergroup                                             Metric       Goal       B
         bin wr_strb[13]                                   198          1          -    Covered              
         bin wr_strb[14]                                   143          1          -    Covered              
         bin wr_strb[15]                                   162          1          -    Covered              
-        bin rd_strb                                      2190          1          -    Covered              
+        bin rd_strb                                      2189          1          -    Covered              
     Coverpoint ready_cp                               100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      3001          1          -    Covered              
+        bin auto[0]                                      3000          1          -    Covered              
         bin auto[1]                                      1501          1          -    Covered              
     Coverpoint slverr_cp                              100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      4356          1          -    Covered              
+        bin auto[0]                                      4355          1          -    Covered              
         bin auto[1]                                       146          1          -    Covered              
     Cross wr_addr_crp                                  99.22%        100          -    Uncovered            
         covered/total bins:                               256        258          -                      
@@ -1357,7 +1357,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],valid_addr[1]>                     3          1          -    Covered              
             bin <auto[0],valid_addr[1]>                     9          1          -    Covered              
             bin <auto[1],valid_addr[0]>                    15          1          -    Covered              
-            bin <auto[0],valid_addr[0]>                    12          1          -    Covered              
+            bin <auto[0],valid_addr[0]>                    11          1          -    Covered              
             bin <auto[0],valid_addr[38]>                    0          1          1    ZERO                 
             bin <auto[0],valid_addr[2]>                     0          1          1    ZERO                 
     Cross sel_en_crp                                  100.00%        100          -    Covered              
@@ -1366,7 +1366,7 @@ Covergroup                                             Metric       Goal       B
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
             bin <auto[1],auto[1]>                        1501          1          -    Covered              
-            bin <auto[1],auto[0]>                        1501          1          -    Covered              
+            bin <auto[1],auto[0]>                        1500          1          -    Covered              
             bin <auto[0],auto[0]>                        1500          1          -    Covered              
         Illegal and Ignore Bins:
             ignore_bin en_nsel                              0                     -    ZERO                 
@@ -1376,7 +1376,7 @@ Covergroup                                             Metric       Goal       B
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
             bin wr_strb                                  2312          1          -    Covered              
-            bin rd_strb                                  2190          1          -    Covered              
+            bin rd_strb                                  2189          1          -    Covered              
         Illegal and Ignore Bins:
             illegal_bin invalid_rd                          0                     -    ZERO                 
             illegal_bin invalid_wr                          0                     -    ZERO                 
@@ -1385,7 +1385,7 @@ Covergroup                                             Metric       Goal       B
         missing/total bins:                                 0        131          -                      
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
-            bin wr_strb                                  2710          1          -    Covered              
+            bin wr_strb                                  2709          1          -    Covered              
             bin <invalid_addr,auto[1]>                    292          1          -    Covered              
             bin <invalid_addr,auto[0]>                    146          1          -    Covered              
             bin <valid_addr[127],auto[0]>                  13          1          -    Covered              
@@ -1523,7 +1523,7 @@ Covergroup                                             Metric       Goal       B
         Auto, Default and User Defined Bins:
             bin <auto[1],auto[1]>                         146          1          -    Covered              
             bin <auto[1],auto[0]>                        1355          1          -    Covered              
-            bin <auto[0],auto[0]>                        3001          1          -    Covered              
+            bin <auto[0],auto[0]>                        3000          1          -    Covered              
         Illegal and Ignore Bins:
             illegal_bin nready_slverr                       0                     -    ZERO                 
     Cross addr_slverr_crp                             100.00%        100          -    Covered              
@@ -1544,7 +1544,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                          72          1          -    Covered              
             bin <auto[0],auto[1]>                          74          1          -    Covered              
             bin <auto[1],auto[0]>                        2240          1          -    Covered              
-            bin <auto[0],auto[0]>                        2116          1          -    Covered              
+            bin <auto[0],auto[0]>                        2115          1          -    Covered              
 
 TOTAL COVERGROUP COVERAGE: 99.94%  COVERGROUP TYPES: 1
 
