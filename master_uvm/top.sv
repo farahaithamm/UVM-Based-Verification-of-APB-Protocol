@@ -30,6 +30,29 @@ APB_MASTER dut (
     .PSTRB(inf.PSTRB)
 );
 
+bind APB_MASTER APB_MASTER_SVA apb_master_sva_inst (
+    .PCLK(PCLK),
+    .PRESETn(PRESETn),
+    .addr(addr),
+    .sel(sel),
+    .transfer(transfer),
+    .wr_en(wr_en),
+    .wdata(wdata),
+    .strb(strb),
+    .OUTDATA(OUTDATA),
+    .valid_out(valid_out),
+    .PREADY(PREADY),
+    .PRDATA(PRDATA),
+    .PSLVERR(PSLVERR),
+    .PADDR(PADDR),
+    .PSEL(PSEL),
+    .PENABLE(PENABLE),
+    .PWRITE(PWRITE),
+    .PWDATA(PWDATA),
+    .PSTRB(PSTRB),
+    .cs(cs)
+);
+
 initial begin
     uvm_config_db #(virtual intf)::set(null, "uvm_test_top", "my_vif", inf);
     run_test("APB_MASTER_Test");

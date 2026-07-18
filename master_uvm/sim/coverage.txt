@@ -1,6 +1,186 @@
 Coverage Report by instance with details
 
 =================================================================================
+=== Instance: /APB_MASTER_top/dut/apb_master_sva_inst
+=== Design Unit: work.APB_MASTER_SVA
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      27        27         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/APB_MASTER_top/dut/apb_master_sva_inst/p_cs_reset
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(39)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_psel_onehot
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(46)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_psel_matches_sel
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(52)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_paddr
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(58)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_write
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(64)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_pwdata
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(70)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_pstrb
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(76)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_no_x_outdata
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(82)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_en_access
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(88)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_enable_idle
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(94)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_outdata_pready_pslverr
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(100)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_valid_out_pready_pslverr
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(106)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_pslverr_high
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(112)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_setup_state
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(118)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_setup_psel_penable
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(124)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_min_two_cycle_transfer
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(130)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_access_psel_penable
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(136)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_access_setup
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(142)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_access_idle
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(148)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_access_wait
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(154)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_stable_access_wait
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(161)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_stable_setup
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(168)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_pstrb_low_on_read
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(174)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_pstrb_not_low_on_write
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(180)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_valid_out_read_only
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(186)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_valid_out_no_error
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(192)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_prdata_outdata
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(198)
+                                                        0          1
+
+Directive Coverage:
+    Directives                      26        26         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/APB_MASTER_top/dut/apb_master_sva_inst/c_psel_onehot 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(47)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_psel_matches_sel 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(53)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_paddr 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(59)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_write 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(65)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_pwdata 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(71)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_pstrb 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(77)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_no_x_outdata 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(83)
+                                                                               479 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_en_access 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(89)
+                                                                              3427 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_enable_idle 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(95)
+                                                                              2093 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_outdata_pready_pslverr 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(101)
+                                                                               479 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_valid_out_pready_pslverr 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(107)
+                                                                               479 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_pslverr_high 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(113)
+                                                                               112 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_setup_state 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(119)
+                                                                              1078 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_setup_psel_penable 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(125)
+                                                                              1078 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_min_two_cycle_transfer 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(131)
+                                                                               371 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_access_psel_penable 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(137)
+                                                                              3427 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_access_setup 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(143)
+                                                                               707 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_access_idle 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(149)
+                                                                               341 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_access_wait 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(155)
+                                                                              2349 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_stable_access_wait 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(162)
+                                                                              2349 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_stable_setup 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(169)
+                                                                              1078 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_pstrb_low_on_read 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(175)
+                                                                              3268 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_pstrb_not_low_on_write 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(181)
+                                                                              3330 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_valid_out_read_only 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(187)
+                                                                               479 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_valid_out_no_error 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(193)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_prdata_outdata 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(199)
+                                                                               479 Covered   
+
+=================================================================================
 === Instance: /APB_MASTER_sequences_pkg
 === Design Unit: work.APB_MASTER_sequences_pkg
 =================================================================================
@@ -136,7 +316,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
-        bin rst_on                                        178          1          -    Covered              
+        bin rst_on                                        179          1          -    Covered              
         bin rst_off                                      6597          1          -    Covered              
         bin rst_on_to_off                                  40          1          -    Covered              
         bin rst_off_to_on                                  39          1          -    Covered              
@@ -144,7 +324,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                               129        129          -                      
         missing/total bins:                                 0        129          -                      
         % Hit:                                        100.00%        100          -                      
-        bin valid_addr[0]                                  66          1          -    Covered              
+        bin valid_addr[0]                                  67          1          -    Covered              
         bin valid_addr[1]                                  40          1          -    Covered              
         bin valid_addr[2]                                  52          1          -    Covered              
         bin valid_addr[3]                                  27          1          -    Covered              
@@ -277,19 +457,19 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      3300          1          -    Covered              
+        bin auto[0]                                      3301          1          -    Covered              
         bin auto[1]                                      3475          1          -    Covered              
     Coverpoint transfer_cp                            100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      3381          1          -    Covered              
+        bin auto[0]                                      3382          1          -    Covered              
         bin auto[1]                                      3394          1          -    Covered              
     Coverpoint wr_en_cp                               100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      3343          1          -    Covered              
+        bin auto[0]                                      3344          1          -    Covered              
         bin auto[1]                                      3432          1          -    Covered              
     Coverpoint strb_cp                                100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
@@ -310,30 +490,30 @@ Covergroup                                             Metric       Goal       B
         bin wr_strb[13]                                   246          1          -    Covered              
         bin wr_strb[14]                                   261          1          -    Covered              
         bin wr_strb[15]                                   239          1          -    Covered              
-        bin rd_strb                                      3343          1          -    Covered              
+        bin rd_strb                                      3344          1          -    Covered              
     Coverpoint valid_out_cp                           100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      6296          1          -    Covered              
+        bin auto[0]                                      6297          1          -    Covered              
         bin auto[1]                                       479          1          -    Covered              
     Coverpoint PSLVERR_cp                             100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      6626          1          -    Covered              
+        bin auto[0]                                      6627          1          -    Covered              
         bin auto[1]                                       149          1          -    Covered              
     Coverpoint ready_cp                               100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      5316          1          -    Covered              
+        bin auto[0]                                      5317          1          -    Covered              
         bin auto[1]                                      1459          1          -    Covered              
     Coverpoint enable_cp                              100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin low                                          3349          1          -    Covered              
+        bin low                                          3350          1          -    Covered              
         bin high                                         3426          1          -    Covered              
     Cross sel_trans_crp                               100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
@@ -343,7 +523,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                        1755          1          -    Covered              
             bin <auto[0],auto[1]>                        1639          1          -    Covered              
             bin <auto[1],auto[0]>                        1720          1          -    Covered              
-            bin <auto[0],auto[0]>                        1661          1          -    Covered              
+            bin <auto[0],auto[0]>                        1662          1          -    Covered              
     Cross sel_wr_crp                                  100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -352,14 +532,14 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                        1732          1          -    Covered              
             bin <auto[0],auto[1]>                        1700          1          -    Covered              
             bin <auto[1],auto[0]>                        1743          1          -    Covered              
-            bin <auto[0],auto[0]>                        1600          1          -    Covered              
+            bin <auto[0],auto[0]>                        1601          1          -    Covered              
     Cross sel_strb_crp                                100.00%        100          -    Covered              
         covered/total bins:                                32         32          -                      
         missing/total bins:                                 0         32          -                      
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
             bin <auto[1],rd_strb>                        1743          1          -    Covered              
-            bin <auto[0],rd_strb>                        1600          1          -    Covered              
+            bin <auto[0],rd_strb>                        1601          1          -    Covered              
             bin <auto[1],wr_strb[15]>                     155          1          -    Covered              
             bin <auto[0],wr_strb[15]>                      84          1          -    Covered              
             bin <auto[1],wr_strb[14]>                     114          1          -    Covered              
@@ -398,7 +578,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                         256          1          -    Covered              
             bin <auto[0],auto[1]>                         223          1          -    Covered              
             bin <auto[1],auto[0]>                        3219          1          -    Covered              
-            bin <auto[0],auto[0]>                        3077          1          -    Covered              
+            bin <auto[0],auto[0]>                        3078          1          -    Covered              
     Cross sel_PSLVERR_crp                             100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -407,7 +587,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                          77          1          -    Covered              
             bin <auto[0],auto[1]>                          72          1          -    Covered              
             bin <auto[1],auto[0]>                        3398          1          -    Covered              
-            bin <auto[0],auto[0]>                        3228          1          -    Covered              
+            bin <auto[0],auto[0]>                        3229          1          -    Covered              
     Cross sel_addr_crp                                 99.61%        100          -    Uncovered            
         covered/total bins:                               257        258          -                      
         missing/total bins:                                 1        258          -                      
@@ -669,14 +849,14 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],valid_addr[1]>                    20          1          -    Covered              
             bin <auto[0],valid_addr[1]>                    20          1          -    Covered              
             bin <auto[1],valid_addr[0]>                    46          1          -    Covered              
-            bin <auto[0],valid_addr[0]>                    20          1          -    Covered              
+            bin <auto[0],valid_addr[0]>                    21          1          -    Covered              
             bin <auto[0],valid_addr[27]>                    0          1          1    ZERO                 
     Cross addr_err_crp                                100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
-            bin valid_no_error                           6097          1          -    Covered              
+            bin valid_no_error                           6098          1          -    Covered              
             bin invalid_err                               149          1          -    Covered              
     Cross valid_wr_crp                                100.00%        100          -    Covered              
         covered/total bins:                                 3          3          -                      
@@ -685,7 +865,7 @@ Covergroup                                             Metric       Goal       B
         Auto, Default and User Defined Bins:
             bin <auto[1],auto[0]>                         479          1          -    Covered              
             bin <auto[0],auto[1]>                        3432          1          -    Covered              
-            bin <auto[0],auto[0]>                        2864          1          -    Covered              
+            bin <auto[0],auto[0]>                        2865          1          -    Covered              
         Illegal and Ignore Bins:
             illegal_bin write_valid                         0                     -    ZERO                 
     Cross ready_valid_crp                             100.00%        100          -    Covered              
@@ -695,7 +875,7 @@ Covergroup                                             Metric       Goal       B
         Auto, Default and User Defined Bins:
             bin <auto[1],auto[1]>                         479          1          -    Covered              
             bin <auto[1],auto[0]>                         980          1          -    Covered              
-            bin <auto[0],auto[0]>                        5316          1          -    Covered              
+            bin <auto[0],auto[0]>                        5317          1          -    Covered              
         Illegal and Ignore Bins:
             illegal_bin valid_not_ready                     0                     -    ZERO                 
     Cross addr_transfer_crp                            99.61%        100          -    Uncovered            
@@ -959,7 +1139,7 @@ Covergroup                                             Metric       Goal       B
             bin <valid_addr[3],auto[0]>                    11          1          -    Covered              
             bin <valid_addr[2],auto[0]>                    23          1          -    Covered              
             bin <valid_addr[1],auto[0]>                    12          1          -    Covered              
-            bin <valid_addr[0],auto[0]>                    22          1          -    Covered              
+            bin <valid_addr[0],auto[0]>                    23          1          -    Covered              
             bin <valid_addr[87],auto[1]>                    0          1          1    ZERO                 
     Cross wr_strb_crp                                 100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
@@ -967,7 +1147,7 @@ Covergroup                                             Metric       Goal       B
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
             bin wr_strb                                  3432          1          -    Covered              
-            bin rd_strb                                  3343          1          -    Covered              
+            bin rd_strb                                  3344          1          -    Covered              
         Illegal and Ignore Bins:
             illegal_bin invalid_rd                          0                     -    ZERO                 
             illegal_bin invalid_wr                          0                     -    ZERO                 
@@ -979,7 +1159,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                         723          1          -    Covered              
             bin <auto[0],auto[1]>                         736          1          -    Covered              
             bin <auto[1],auto[0]>                        2671          1          -    Covered              
-            bin <auto[0],auto[0]>                        2645          1          -    Covered              
+            bin <auto[0],auto[0]>                        2646          1          -    Covered              
 
 COVERGROUP COVERAGE:
 ----------------------------------------------------------------------------------------------------------
@@ -1088,7 +1268,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
-        bin rst_on                                        178          1          -    Covered              
+        bin rst_on                                        179          1          -    Covered              
         bin rst_off                                      6597          1          -    Covered              
         bin rst_on_to_off                                  40          1          -    Covered              
         bin rst_off_to_on                                  39          1          -    Covered              
@@ -1096,7 +1276,7 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                               129        129          -                      
         missing/total bins:                                 0        129          -                      
         % Hit:                                        100.00%        100          -                      
-        bin valid_addr[0]                                  66          1          -    Covered              
+        bin valid_addr[0]                                  67          1          -    Covered              
         bin valid_addr[1]                                  40          1          -    Covered              
         bin valid_addr[2]                                  52          1          -    Covered              
         bin valid_addr[3]                                  27          1          -    Covered              
@@ -1229,19 +1409,19 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      3300          1          -    Covered              
+        bin auto[0]                                      3301          1          -    Covered              
         bin auto[1]                                      3475          1          -    Covered              
     Coverpoint transfer_cp                            100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      3381          1          -    Covered              
+        bin auto[0]                                      3382          1          -    Covered              
         bin auto[1]                                      3394          1          -    Covered              
     Coverpoint wr_en_cp                               100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      3343          1          -    Covered              
+        bin auto[0]                                      3344          1          -    Covered              
         bin auto[1]                                      3432          1          -    Covered              
     Coverpoint strb_cp                                100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
@@ -1262,30 +1442,30 @@ Covergroup                                             Metric       Goal       B
         bin wr_strb[13]                                   246          1          -    Covered              
         bin wr_strb[14]                                   261          1          -    Covered              
         bin wr_strb[15]                                   239          1          -    Covered              
-        bin rd_strb                                      3343          1          -    Covered              
+        bin rd_strb                                      3344          1          -    Covered              
     Coverpoint valid_out_cp                           100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      6296          1          -    Covered              
+        bin auto[0]                                      6297          1          -    Covered              
         bin auto[1]                                       479          1          -    Covered              
     Coverpoint PSLVERR_cp                             100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      6626          1          -    Covered              
+        bin auto[0]                                      6627          1          -    Covered              
         bin auto[1]                                       149          1          -    Covered              
     Coverpoint ready_cp                               100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin auto[0]                                      5316          1          -    Covered              
+        bin auto[0]                                      5317          1          -    Covered              
         bin auto[1]                                      1459          1          -    Covered              
     Coverpoint enable_cp                              100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin low                                          3349          1          -    Covered              
+        bin low                                          3350          1          -    Covered              
         bin high                                         3426          1          -    Covered              
     Cross sel_trans_crp                               100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
@@ -1295,7 +1475,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                        1755          1          -    Covered              
             bin <auto[0],auto[1]>                        1639          1          -    Covered              
             bin <auto[1],auto[0]>                        1720          1          -    Covered              
-            bin <auto[0],auto[0]>                        1661          1          -    Covered              
+            bin <auto[0],auto[0]>                        1662          1          -    Covered              
     Cross sel_wr_crp                                  100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -1304,14 +1484,14 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                        1732          1          -    Covered              
             bin <auto[0],auto[1]>                        1700          1          -    Covered              
             bin <auto[1],auto[0]>                        1743          1          -    Covered              
-            bin <auto[0],auto[0]>                        1600          1          -    Covered              
+            bin <auto[0],auto[0]>                        1601          1          -    Covered              
     Cross sel_strb_crp                                100.00%        100          -    Covered              
         covered/total bins:                                32         32          -                      
         missing/total bins:                                 0         32          -                      
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
             bin <auto[1],rd_strb>                        1743          1          -    Covered              
-            bin <auto[0],rd_strb>                        1600          1          -    Covered              
+            bin <auto[0],rd_strb>                        1601          1          -    Covered              
             bin <auto[1],wr_strb[15]>                     155          1          -    Covered              
             bin <auto[0],wr_strb[15]>                      84          1          -    Covered              
             bin <auto[1],wr_strb[14]>                     114          1          -    Covered              
@@ -1350,7 +1530,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                         256          1          -    Covered              
             bin <auto[0],auto[1]>                         223          1          -    Covered              
             bin <auto[1],auto[0]>                        3219          1          -    Covered              
-            bin <auto[0],auto[0]>                        3077          1          -    Covered              
+            bin <auto[0],auto[0]>                        3078          1          -    Covered              
     Cross sel_PSLVERR_crp                             100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -1359,7 +1539,7 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                          77          1          -    Covered              
             bin <auto[0],auto[1]>                          72          1          -    Covered              
             bin <auto[1],auto[0]>                        3398          1          -    Covered              
-            bin <auto[0],auto[0]>                        3228          1          -    Covered              
+            bin <auto[0],auto[0]>                        3229          1          -    Covered              
     Cross sel_addr_crp                                 99.61%        100          -    Uncovered            
         covered/total bins:                               257        258          -                      
         missing/total bins:                                 1        258          -                      
@@ -1621,14 +1801,14 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],valid_addr[1]>                    20          1          -    Covered              
             bin <auto[0],valid_addr[1]>                    20          1          -    Covered              
             bin <auto[1],valid_addr[0]>                    46          1          -    Covered              
-            bin <auto[0],valid_addr[0]>                    20          1          -    Covered              
+            bin <auto[0],valid_addr[0]>                    21          1          -    Covered              
             bin <auto[0],valid_addr[27]>                    0          1          1    ZERO                 
     Cross addr_err_crp                                100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
-            bin valid_no_error                           6097          1          -    Covered              
+            bin valid_no_error                           6098          1          -    Covered              
             bin invalid_err                               149          1          -    Covered              
     Cross valid_wr_crp                                100.00%        100          -    Covered              
         covered/total bins:                                 3          3          -                      
@@ -1637,7 +1817,7 @@ Covergroup                                             Metric       Goal       B
         Auto, Default and User Defined Bins:
             bin <auto[1],auto[0]>                         479          1          -    Covered              
             bin <auto[0],auto[1]>                        3432          1          -    Covered              
-            bin <auto[0],auto[0]>                        2864          1          -    Covered              
+            bin <auto[0],auto[0]>                        2865          1          -    Covered              
         Illegal and Ignore Bins:
             illegal_bin write_valid                         0                     -    ZERO                 
     Cross ready_valid_crp                             100.00%        100          -    Covered              
@@ -1647,7 +1827,7 @@ Covergroup                                             Metric       Goal       B
         Auto, Default and User Defined Bins:
             bin <auto[1],auto[1]>                         479          1          -    Covered              
             bin <auto[1],auto[0]>                         980          1          -    Covered              
-            bin <auto[0],auto[0]>                        5316          1          -    Covered              
+            bin <auto[0],auto[0]>                        5317          1          -    Covered              
         Illegal and Ignore Bins:
             illegal_bin valid_not_ready                     0                     -    ZERO                 
     Cross addr_transfer_crp                            99.61%        100          -    Uncovered            
@@ -1911,7 +2091,7 @@ Covergroup                                             Metric       Goal       B
             bin <valid_addr[3],auto[0]>                    11          1          -    Covered              
             bin <valid_addr[2],auto[0]>                    23          1          -    Covered              
             bin <valid_addr[1],auto[0]>                    12          1          -    Covered              
-            bin <valid_addr[0],auto[0]>                    22          1          -    Covered              
+            bin <valid_addr[0],auto[0]>                    23          1          -    Covered              
             bin <valid_addr[87],auto[1]>                    0          1          1    ZERO                 
     Cross wr_strb_crp                                 100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
@@ -1919,7 +2099,7 @@ Covergroup                                             Metric       Goal       B
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
             bin wr_strb                                  3432          1          -    Covered              
-            bin rd_strb                                  3343          1          -    Covered              
+            bin rd_strb                                  3344          1          -    Covered              
         Illegal and Ignore Bins:
             illegal_bin invalid_rd                          0                     -    ZERO                 
             illegal_bin invalid_wr                          0                     -    ZERO                 
@@ -1931,15 +2111,182 @@ Covergroup                                             Metric       Goal       B
             bin <auto[1],auto[1]>                         723          1          -    Covered              
             bin <auto[0],auto[1]>                         736          1          -    Covered              
             bin <auto[1],auto[0]>                        2671          1          -    Covered              
-            bin <auto[0],auto[0]>                        2645          1          -    Covered              
+            bin <auto[0],auto[0]>                        2646          1          -    Covered              
 
 TOTAL COVERGROUP COVERAGE: 99.96%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/APB_MASTER_top/dut/apb_master_sva_inst/c_psel_onehot 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(47)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_psel_matches_sel 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(53)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_paddr 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(59)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_write 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(65)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_pwdata 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(71)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_pstrb 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(77)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_no_x_outdata 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(83)
+                                                                               479 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_en_access 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(89)
+                                                                              3427 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_enable_idle 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(95)
+                                                                              2093 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_outdata_pready_pslverr 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(101)
+                                                                               479 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_valid_out_pready_pslverr 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(107)
+                                                                               479 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_pslverr_high 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(113)
+                                                                               112 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_setup_state 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(119)
+                                                                              1078 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_setup_psel_penable 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(125)
+                                                                              1078 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_min_two_cycle_transfer 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(131)
+                                                                               371 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_access_psel_penable 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(137)
+                                                                              3427 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_access_setup 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(143)
+                                                                               707 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_access_idle 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(149)
+                                                                               341 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_access_wait 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(155)
+                                                                              2349 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_stable_access_wait 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(162)
+                                                                              2349 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_stable_setup 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(169)
+                                                                              1078 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_pstrb_low_on_read 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(175)
+                                                                              3268 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_pstrb_not_low_on_write 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(181)
+                                                                              3330 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_valid_out_read_only 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(187)
+                                                                               479 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_valid_out_no_error 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(193)
+                                                                              6598 Covered   
+/APB_MASTER_top/dut/apb_master_sva_inst/c_prdata_outdata 
+                                         APB_MASTER_SVA Verilog  SVA  D:/APB MASTER UVM/APB_MASTER_sva.sv(199)
+                                                                               479 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 26
 
 ASSERTION RESULTS:
 --------------------------------------------------------------------
 Name                 File(Line)                   Failure      Pass 
                                                   Count        Count
 --------------------------------------------------------------------
+/APB_MASTER_top/dut/apb_master_sva_inst/p_cs_reset
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(39)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_psel_onehot
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(46)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_psel_matches_sel
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(52)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_paddr
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(58)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_write
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(64)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_pwdata
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(70)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_pstrb
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(76)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_no_x_outdata
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(82)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_en_access
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(88)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_enable_idle
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(94)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_outdata_pready_pslverr
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(100)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_valid_out_pready_pslverr
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(106)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_pslverr_high
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(112)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_setup_state
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(118)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_setup_psel_penable
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(124)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_min_two_cycle_transfer
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(130)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_access_psel_penable
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(136)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_access_setup
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(142)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_access_idle
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(148)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_access_wait
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(154)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_stable_access_wait
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(161)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_stable_setup
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(168)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_pstrb_low_on_read
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(174)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_pstrb_not_low_on_write
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(180)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_valid_out_read_only
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(186)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_valid_out_no_error
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(192)
+                                                        0          1
+/APB_MASTER_top/dut/apb_master_sva_inst/a_prdata_outdata
+                     D:/APB MASTER UVM/APB_MASTER_sva.sv(198)
+                                                        0          1
 /APB_MASTER_sequences_pkg/APB_MASTER_write_sequence/body/#ublk#49137447#41/immed__44
                      D:/APB MASTER UVM/APB_MASTER_sequences.sv(44)
                                                         0          1
